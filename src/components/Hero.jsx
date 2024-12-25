@@ -3,7 +3,7 @@ import profile from "../assets/profile.png";
 
 const Hero = () => {
   return (
-    <div className="flex items-center flex-col gap-8 border">
+    <section id="hero" className="flex items-center flex-col gap-8 border">
       <img className="mt-20 w-72" src={profile} alt="" />
       <h1 className="text-center w-[70%] text-2xl font-bold">
         <span className="text-4xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -29,7 +29,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

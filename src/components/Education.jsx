@@ -2,7 +2,7 @@ import React from "react";
 
 export const Education = () => {
   return (
-    <div>
+    <section id="education">
        <div className="text-center leading-8">
         <h1 className="text-4xl font-bold">Education</h1>
         <p className="text-gray-400">
@@ -80,6 +80,6 @@ export const Education = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

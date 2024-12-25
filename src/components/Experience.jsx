@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div>
+    <section id="experience">
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold">Experience</h1>
         <p className="text-gray-400">
@@ -76,7 +76,7 @@ const Experience = () => {
         </li>
       </ul>
     </div>
-    </div>
+    </section>
   );
 };
 

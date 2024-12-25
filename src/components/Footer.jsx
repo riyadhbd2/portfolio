@@ -4,7 +4,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="text-center">
+    <div className="text-center mt-36">
       <h1 className="text-violet-600 text-lg font-bold">Easir Arafat</h1>
       <div className="flex gap-5 justify-center mt-3">
         <p>About</p>

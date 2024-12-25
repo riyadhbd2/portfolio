@@ -3,7 +3,7 @@ import { FaReact, FaHtml5  } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <div className="mt-8">
+    <section id="skills" className="mt-8">
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold">Skills</h1>
         <p className="text-gray-400">
@@ -49,7 +49,7 @@ const Skills = () => {
         {/* Other */}
         <div className="border m-5 h-72">Others</div>
       </div>
-    </div>
+    </section>
   );
 };
 
