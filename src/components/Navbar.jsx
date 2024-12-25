@@ -6,9 +6,9 @@ const Navbar = () => {
     background: "linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%)",
   };
   return (
-    <div className="flex items-center justify-around mx-8 my-5">
+    <div className="flex items-center justify-around py-4 border">
       <img className="w-20" src={profile_logo} alt="" />
-      <ul className="flex items-center list-none gap-14 text-sm">
+      <ul className="lg:flex items-center list-none gap-10 text-base">
         <li>About</li>
         <li>Skills</li>
         <li>Experience</li>

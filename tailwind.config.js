@@ -1,16 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+import { keepTheme } from 'keep-react/keepTheme'
+
+const config = {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {},
+  plugins: [
+    require('daisyui'),
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'custom-gradient': 'linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%)',
-      },
-    },
-  },
-  plugins: [],
+  
 }
 
+export default keepTheme(config)
