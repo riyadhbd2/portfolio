@@ -19,7 +19,7 @@ const Hero = () => {
       </p>
       <div className="flex flex-col md:flex-row items-center gap-5 mb-5">
         <div>
-          <button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300">
+          <button onClick={() => window.open('https://docs.google.com/document/d/1DK6BeFUiKrmLBiHglzXq2nGUVDmOf798o16d7RPPva8/edit?usp=sharing', '_blank')} className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300">
             Check Resume
           </button>
         </div>
