@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="container mx-auto">
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold">Projects</h1>
         <p className="text-gray-400">
