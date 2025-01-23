@@ -2,14 +2,14 @@ import React from "react";
 
 export const Education = () => {
   return (
-    <section id="education" className="container mx-auto">
+    <section id="education" className="container mx-auto flex flex-col items-center justify-center mt-10">
        <div className="text-center leading-8">
         <h1 className="text-4xl font-bold">Education</h1>
         <p className="text-gray-400">
         My education has been a journey of self-discovery and growth. My educational details are as follows.
         </p>
       </div>
-      <div className="text-gray-400">
+      <div className="text-gray-400 w-2/3">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Master education */}
           <li className="border">

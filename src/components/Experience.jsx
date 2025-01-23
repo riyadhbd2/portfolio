@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="container mx-auto">
+    <section id="experience" className="container mx-auto flex flex-col items-center justify-center">
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold">Experience</h1>
         <p className="text-gray-400">
@@ -10,10 +10,10 @@ const Experience = () => {
           companies and projects.
         </p>
       </div>
-      <div className="text-gray-400">
+      <div className="text-gray-400 w-2/3">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-           {/* Experience first */}
-           <li className="border">
+          {/* Experience first */}
+          <li className="">
             <hr />
             <div className="timeline-middle">
               <svg
@@ -45,7 +45,7 @@ const Experience = () => {
             <hr className="bg-white" />
           </li>
           {/* Experience last */}
-          <li className="border">
+          <li className="">
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,6 @@ const Experience = () => {
             </div>
             <hr className="bg-white" />
           </li>
-         
         </ul>
       </div>
     </section>

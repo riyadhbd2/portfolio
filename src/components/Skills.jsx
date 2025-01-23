@@ -1,6 +1,9 @@
-import React from "react";
-import { FaHtml5, FaReact } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
+
+import { FaHtml5, FaReact, FaBootstrap } from "react-icons/fa";
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
+import { SiRedux } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaFlutter } from "react-icons/fa6";
 
 const Skills = () => {
   return (
@@ -34,7 +37,6 @@ const Skills = () => {
               <p className="text-gray-400">CSS</p>
             </div>
 
-            {/* single skill */}
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
                 <FaReact className="text-[#61DAFB]" />
@@ -46,30 +48,36 @@ const Skills = () => {
           <div className="flex gap-2 items-center justify-center">
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
-                <FaHtml5 className="text-[#E44D26]" />
+                <IoLogoJavascript className="bg-[#F7DF1E] text-black text-sm" />
               </p>
-              <p className="text-gray-400">HTML</p>
+              <p className="text-gray-400">JavaScript</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
-                <FaHtml5 className="text-[#E44D26]" />
+                <SiRedux />
               </p>
-              <p className="text-gray-400">HTML</p>
+              <p className="text-gray-400">Redux</p>
             </div>
           </div>
           {/* 1st row 3rd line */}
           <div className="flex gap-2 items-center justify-center">
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
-                <FaHtml5 className="text-[#E44D26]" />
+              <RiTailwindCssFill />
               </p>
-              <p className="text-gray-400">HTML</p>
+              <p className="text-gray-400">Tailwind</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
-                <FaHtml5 className="text-[#E44D26]" />
+              <FaBootstrap />
               </p>
-              <p className="text-gray-400">HTML</p>
+              <p className="text-gray-400">Bootstrap</p>
+            </div>
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+              <p>
+              <FaFlutter />
+              </p>
+              <p className="text-gray-400">Flutter</p>
             </div>
           </div>
           {/* 1st row 4th line */}
@@ -90,8 +98,8 @@ const Skills = () => {
         </div>
         {/* Backend */}
         <div className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3">
-        <h1 className="text-3xl text-gray-400 font-bold mt-3">Backend</h1>
-        <div className="flex justify-center items-center gap-2">
+          <h1 className="text-3xl text-gray-400 font-bold mt-3">Backend</h1>
+          <div className="flex justify-center items-center gap-2">
             {/* single skill */}
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
@@ -163,8 +171,8 @@ const Skills = () => {
         </div>
         {/* DevOps */}
         <div className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3">
-        <h1 className="text-3xl text-gray-400 font-bold mt-3">DevOps</h1>
-        <div className="flex justify-center items-center gap-2">
+          <h1 className="text-3xl text-gray-400 font-bold mt-3">DevOps</h1>
+          <div className="flex justify-center items-center gap-2">
             {/* single skill */}
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
@@ -236,8 +244,8 @@ const Skills = () => {
         </div>
         {/* Other */}
         <div className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3">
-        <h1 className="text-3xl text-gray-400 font-bold mt-3">Others</h1>
-        <div className="flex justify-center items-center gap-2">
+          <h1 className="text-3xl text-gray-400 font-bold mt-3">Others</h1>
+          <div className="flex justify-center items-center gap-2">
             {/* single skill */}
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
