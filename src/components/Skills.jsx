@@ -1,9 +1,9 @@
-
-import { FaHtml5, FaReact, FaBootstrap } from "react-icons/fa";
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
-import { SiRedux } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { FaBootstrap, FaHtml5, FaReact } from "react-icons/fa";
 import { FaFlutter } from "react-icons/fa6";
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiRedux } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -18,7 +18,13 @@ const Skills = () => {
       {/* skill cards */}
       <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 justify-center gap-5 w-3/4 mx-auto text-center m-10">
         {/* Frontend */}
-        <div className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3">
+        <motion.div
+          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+        >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Frontend</h1>
           {/* 1st row 1st line */}
           <div className="flex justify-center items-center gap-2">
@@ -63,19 +69,19 @@ const Skills = () => {
           <div className="flex gap-2 items-center justify-center">
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
-              <RiTailwindCssFill />
+                <RiTailwindCssFill />
               </p>
               <p className="text-gray-400">Tailwind</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
-              <FaBootstrap />
+                <FaBootstrap />
               </p>
               <p className="text-gray-400">Bootstrap</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
               <p>
-              <FaFlutter />
+                <FaFlutter />
               </p>
               <p className="text-gray-400">Flutter</p>
             </div>
@@ -95,9 +101,15 @@ const Skills = () => {
               <p className="text-gray-400">HTML</p>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* Backend */}
-        <div className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+        >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Backend</h1>
           <div className="flex justify-center items-center gap-2">
             {/* single skill */}
@@ -168,9 +180,15 @@ const Skills = () => {
               <p className="text-gray-400">HTML</p>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* DevOps */}
-        <div className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+        >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">DevOps</h1>
           <div className="flex justify-center items-center gap-2">
             {/* single skill */}
@@ -241,9 +259,15 @@ const Skills = () => {
               <p className="text-gray-400">HTML</p>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* Other */}
-        <div className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+        >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Others</h1>
           <div className="flex justify-center items-center gap-2">
             {/* single skill */}
@@ -314,7 +338,7 @@ const Skills = () => {
               <p className="text-gray-400">HTML</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

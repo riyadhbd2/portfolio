@@ -49,16 +49,6 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        {/* project two */}
-        <div className="border rounded-lg border-gray-400 h-96">Project 2</div>
-        {/* project three */}
-        <div className="border rounded-lg border-gray-400 h-96">Project 3</div>
-        {/* project four */}
-        <div className="border rounded-lg border-gray-400 h-96">Project 4</div>
-        {/* project five */}
-        <div className="border rounded-lg border-gray-400 h-96">Project 5</div>
-        {/* project six */}
-        <div className="border rounded-lg border-gray-400 h-96">Project 6</div>
       </div>
     </section>
   );
