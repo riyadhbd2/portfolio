@@ -3,11 +3,11 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 import Contact from "./components/Contact";
 import { Education } from "./components/Education";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Footer from "./components/Footer";
 
 const App = () => {
   // scrolling function
@@ -61,7 +61,7 @@ const App = () => {
             }
           />
         </Routes>
-      <Footer></Footer> 
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

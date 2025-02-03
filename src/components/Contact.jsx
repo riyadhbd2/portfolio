@@ -1,4 +1,28 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+
+  const form = useRef();
+
+  // send email function from emailjs
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_0telf5e', 'template_ltloz5k', form.current, {
+        publicKey: '61hB0M4iF4ObkeHDp',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <section id="contact" className="mt-10">
       <div className="text-center leading-10">
@@ -8,7 +32,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="flex justify-center items-center">
-        <form className="flex flex-col gap-3 border border-gray-600 rounded-lg p-7 mt-5">
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-3 border border-gray-600 rounded-lg p-7 mt-5">
           <p className="text-xl font-bold">Email Me</p>
           <input
             className="border border-gray-600 rounded-xl h-12 placeholder:p-3"
@@ -39,7 +63,7 @@ const Contact = () => {
             rows="10"
             placeholder="Message"
           ></textarea>
-          <button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300">
+          <button type="submit" className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300">
             Send
           </button>
         </form>

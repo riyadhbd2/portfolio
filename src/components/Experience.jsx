@@ -10,7 +10,7 @@ const Experience = () => {
           companies and projects.
         </p>
       </div>
-      <div className="text-gray-400 w-2/3">
+      <div className="text-gray-400 w-2/3 mt-5">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Experience first */}
           <li className="">

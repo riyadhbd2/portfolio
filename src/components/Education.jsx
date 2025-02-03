@@ -9,10 +9,10 @@ export const Education = () => {
         My education has been a journey of self-discovery and growth. My educational details are as follows.
         </p>
       </div>
-      <div className="text-gray-400 w-2/3">
+      <div className="text-gray-400 w-2/3 mt-5">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Master education */}
-          <li className="border">
+          <li className="">
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export const Education = () => {
             <hr className="bg-white" />
           </li>
           {/* Bachelor Education */}
-          <li className="border">
+          <li className="">
             <hr />
             <div className="timeline-middle">
               <svg
