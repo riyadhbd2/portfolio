@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { Link } from "react-router";
-import profile_logo from "../assets/profile_logo.jpg";
+import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router";
 import NavModal from "./NavModal";
 
 const Navbar = () => {
-  
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -16,22 +15,36 @@ const Navbar = () => {
     background: "linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%)",
   };
 
+  // scrolling bg useffect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="flex items-center justify-around py-2 sticky top-0 z-10 bg-black">
+    <div className={`flex items-center justify-around py-2 fixed top-0 z-10 transition-all duration-300 w-full ${scrolling ? "bg-gray-900 text-white shadow-lg" : "bg-transparent"} `}>
       <div>
         <Link to="/">
-          <img className="hidden lg:block rounded-full w-20" src={profile_logo} alt="" />
-          <RxHamburgerMenu onClick={toggleModal} className="text-3xl lg:hidden" />
+          {/* <img className="hidden lg:block rounded-full w-20" src={profile_logo} alt="" /> */}
+          <h1 class>Easir Arafat</h1>
+          <RxHamburgerMenu
+            onClick={toggleModal}
+            className="text-3xl lg:hidden"
+          />
         </Link>
       </div>
 
       {/*  */}
 
-      {
-        isModalOpen &&  <NavModal></NavModal>
-      }
-     
+      {isModalOpen && <NavModal></NavModal>}
 
       {/*  */}
       <ul className="hidden lg:flex items-center list-none gap-1 text-base">
