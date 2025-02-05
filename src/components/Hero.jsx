@@ -8,9 +8,6 @@ const Hero = () => {
       id="hero"
       className="container mx-auto flex items-center flex-col gap-8 mt-20"
     >
-      {/* <img className="mt-20 w-72" src={profile} alt="" /> */}
-      {/*  */}
-
       <motion.img
         src={profile} // Replace with your actual photo path
         alt="Profile Photo"
