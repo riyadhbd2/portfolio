@@ -32,12 +32,13 @@ export const Education = () => {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono italic">October 2018 - Present</time>
-              <div className="text-lg font-black">
+              <time className="font-mono text-sm italic">October 2018 - Present</time>
+              <p>Master's in Automotive Software Engineering</p>
+              <div className="text-xl font-black">
                 Chemnitz University of Technology
               </div>
-              <p>
-                I am currently pursuin Master's Degree
+              <p className="mt-5">
+                I am currently pursuing Master's Degree in Automotive Software Enginnering in TU CHemnitz. I have completed internship on "Syntheric Data generation" in my University. Curreently I am doing thesis on "Configurable, Compact and Static Web Visualization of RDF Graphs". I have completed so many courses in the previous semesters. Among them "Advance Management of Data", "Multicore programming", "Software Enginnering and Programming Basics" and "Software Service Engineering" helped me to increase the deep knowledge of Programming Language. 
               </p>
             </div>
             <hr className="bg-white" />
@@ -60,18 +61,16 @@ export const Education = () => {
               </svg>
             </div>
             <div className="timeline-end mb-10">
-              <time className="font-mono italic">
+              <time className="font-mono italic text-sm">
                 {" "}
                 January 2014 - June 2014
               </time>
-              <div className="text-lg font-black">
+              <p>Bachelor's in Computer Science and Engineering</p>
+              <div className="text-xl font-black">
                 Daffodil International University
               </div>
-              <p>
-                iMac is a family of all-in-one Mac desktop computers designed
-                and built by Apple Inc. It has been the primary part of Apple's
-                consumer desktop offerings since its debut in August 1998, and
-                has evolved through seven distinct forms
+              <p className="mt-5">
+                I completed my Bachelor's degree in Computer Science and Engineering from Daffodil International University. This is one of the best University in Bangladesh. During my studies, I developed a strong foundation in software development, algorithms, and system design. My academic journey equipped me with skills in programming, web development, and data structures, allowing me to build innovative tech solutions. I am passionate about coding, problem-solving, and exploring emerging technologies to drive digital transformation.
               </p>
             </div>
             <hr className="bg-white" />
