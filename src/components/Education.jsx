@@ -2,11 +2,15 @@ import React from "react";
 
 export const Education = () => {
   return (
-    <section id="education" className="container mx-auto flex flex-col items-center justify-center mt-10">
-       <div className="text-center leading-8">
+    <section
+      id="education"
+      className="container mx-auto flex flex-col items-center justify-center mt-10"
+    >
+      <div className="text-center leading-8">
         <h1 className="text-4xl font-bold text-orange-400">Education</h1>
         <p className="text-gray-400">
-        My education has been a journey of self-discovery and growth. My educational details are as follows.
+          My education has been a journey of self-discovery and growth. My
+          educational details are as follows.
         </p>
       </div>
       <div className="text-gray-400 w-2/3 mt-5">
@@ -33,13 +37,7 @@ export const Education = () => {
                 Chemnitz University of Technology
               </div>
               <p>
-                The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-                original Apple Macintosh personal computer. It played a pivotal
-                role in establishing desktop publishing as a general office
-                function. The motherboard, a 9 in (23 cm) CRT monitor, and a
-                floppy drive were housed in a beige case with integrated
-                carrying handle; it came with a keyboard and single-button
-                mouse.
+                I am currently pursuin Master's Degree
               </p>
             </div>
             <hr className="bg-white" />
