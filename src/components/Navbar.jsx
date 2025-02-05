@@ -33,7 +33,7 @@ const Navbar = () => {
       {/* 1st part */}
       <div>
          {/* Logo or Navbar Title */}
-         <div className="hidden lg:block text-lg font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 px-5  hover:from-blue-700">Easir Arafat</div>
+         <Link to="/" className="hidden lg:block text-2xl font-bold text-orange-400"> <h1>Easir Arafat</h1></Link>
         {/* Burger Menu Button */}
         <button className="lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <RxHamburgerMenu className="w-6 h-6 text-white" />
