@@ -37,7 +37,7 @@ const Experience = () => {
               <div className="text-xl font-black">Frontend Developer</div>
               <p>Tech Point Ltd. </p>
               <p className="mt-5">
-                I did my first full time job in this company. There was a simple e-commerce website where I had to manage the Frontend part. The website was built by HTML, CSS and JavaScript. The Bootstap also used to design the website. Here I got industry level application experience. 
+                I did my first full time job in this company. There was a simple e-commerce website where I had to manage the Frontend part. The website was built by HTML, CSS and JavaScript. The Bootstap also used to design the website. Here I got the industry level application experience. 
               </p>
             </div>
             <hr className="bg-white" />

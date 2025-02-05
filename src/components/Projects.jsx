@@ -28,8 +28,52 @@ const Projects = () => {
       {/* Project List */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-5 w-2/3">
         {/* project one */}
-        <div className="border rounded-lg border-gray-400 h-96">
-          <div className="border m-5">
+        <div className="border border-gray-100 rounded-lg h-96">
+          <div className=" m-5">
+            <div className="flex items-center justify-center">
+              <img
+                className="w-60"
+                src="https://cardoctor.ie/wp-content/uploads/2021/12/LogoCarDoctor_hex.png"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <p>React.js</p>
+            </div>
+            <h1>Car Doctor</h1>
+            <p>Date: </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </p>
+          </div>
+        </div>
+        {/* project two */}
+        <div className="border border-gray-100 rounded-lg h-96">
+          <div className="m-5">
+            <div className="flex items-center justify-center">
+              <img
+                className="w-60"
+                src="https://cardoctor.ie/wp-content/uploads/2021/12/LogoCarDoctor_hex.png"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <p>React.js</p>
+            </div>
+            <h1>Car Doctor</h1>
+            <p>Date: </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </p>
+          </div>
+        </div>
+        {/* project three */}
+        <div className="border rounded-lg border-gray-100 h-96">
+          <div className="m-5">
             <div className="flex items-center justify-center">
               <img
                 className="w-60"
