@@ -26,14 +26,20 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex items-center justify-around py-2 fixed top-0 z-10 transition-all duration-300 w-full mt-3 ${
+      className={`flex items-center justify-around py-2 fixed top-0 z-10 transition-all duration-300 w-full ${
         scrolling ? "bg-gray-900 text-white shadow-lg" : "bg-transparent"
       } `}
     >
       {/* 1st part */}
       <div>
-         {/* Logo or Navbar Title */}
-         <Link to="/" className="hidden lg:block text-2xl font-bold text-orange-400"> <h1>Easir Arafat</h1></Link>
+        {/* Logo or Navbar Title */}
+        <Link
+          to="/"
+          className="hidden lg:block text-2xl font-bold text-orange-400"
+        >
+          {" "}
+          <h1>Easir Arafat</h1>
+        </Link>
         {/* Burger Menu Button */}
         <button className="lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <RxHamburgerMenu className="w-6 h-6 text-white" />
