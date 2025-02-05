@@ -9,8 +9,7 @@ const Projects = () => {
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold text-orange-400">Projects</h1>
         <p className="text-gray-400">
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          I have worked on a wide range of full stack projects. Here are some example.
         </p>
       </div>
       {/* filter button */}
