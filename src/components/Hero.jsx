@@ -3,6 +3,7 @@ import React from "react";
 import profile from "../assets/profile.png";
 
 const Hero = () => {
+  const text = "Full- Stack Web Developer Based in Germany";
   return (
     <section
       id="hero"
@@ -18,26 +19,28 @@ const Hero = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       />
 
-      {/*  */}
-      <h1 className="text-center w-[70%] text-xl font-bold">
-        <span className="text-xl ">Hi, I am</span>
-        <br />
-        <span className="text-4xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-          Easir Arafat,
-        </span>{" "}
-        <motion.h1
-          className="text-2xl font-bold text-center text-white mt-3"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.1, color: "#ffcc00" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <h1 className="text-white">Full-Stack Web Developer Based in Germany.</h1>
-          
-        </motion.h1>
-      
+      {/* text */}
+      <h2 className="text-center w-[70%] text-2xl font-bold mt-5">Hi I am <span className="text-orange-400">Easir Arafat,</span></h2>
+      {/* animated text */}
+      <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
+        {text.split("").map((char, index) => (
+          <motion.span
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 5 }}
+            transition={{
+              duration: 0.8, // Slow fade-in per letter
+              delay: index * 0.1, // Stagger animation per letter
+              repeat: Infinity, // Repeat animation indefinitely
+              repeatDelay: 5, // Wait 5 seconds before restarting
+            }}
+            className="inline-block"
+          >
+            {char === " " ? "\u00A0" : char} {/* Preserve spaces */}
+          </motion.span>
+        ))}
       </h1>
-      <p className="w-[50%] text-center text-base leading-7 text-gray-400">
+      <p className="w-[50%] text-center text-base leading-7 text-gray-400 mt-[-10px]">
         I am committed to continuous learning and delivering clean, efficient
         code to create impactful digital experiences. With a keen eye for detail
         and a collaborative mindset, I am eager to contribute to innovative
