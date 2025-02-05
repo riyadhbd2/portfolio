@@ -30,16 +30,14 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-end mb-10">
-              <time className="font-mono italic">
+              <time className="font-mono italic text-sm">
                 {" "}
                 1 April 2016 - 31 October 2015
               </time>
-              <div className="text-lg font-black">Web Developer</div>
-              <p>
-                iMac is a family of all-in-one Mac desktop computers designed
-                and built by Apple Inc. It has been the primary part of Apple's
-                consumer desktop offerings since its debut in August 1998, and
-                has evolved through seven distinct forms
+              <div className="text-xl font-black">Frontend Developer</div>
+              <p>Tech Point Ltd. </p>
+              <p className="mt-5">
+                I did my first full time job in this company. There was a simple e-commerce website where I had to manage the Frontend part. The website was built by HTML, CSS and JavaScript. The Bootstap also used to design the website. Here I got industry level application experience. 
               </p>
             </div>
             <hr className="bg-white" />
@@ -61,20 +59,17 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono italic">
-                13 October 2014 - 27 October 2015
+              <time className="font-mono italic text-sm">
+                13 October 2014 - 27 April 2015
               </time>
-              <div className="text-lg font-black">
-                Junior Frontent Developer Intern
+              <div className="text-xl font-black">
+                Junior Frontend Intern
               </div>
-              <p>
-                The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-                original Apple Macintosh personal computer. It played a pivotal
-                role in establishing desktop publishing as a general office
-                function. The motherboard, a 9 in (23 cm) CRT monitor, and a
-                floppy drive were housed in a beige case with integrated
-                carrying handle; it came with a keyboard and single-button
-                mouse.
+              <p>Preview Technologies</p>
+              <p className="mt-5">
+                I did my first internship in this company. 
+                Here I gained the professional
+                knowledge of Frontend technology like HTML, CSS and JavaScript basic. With HTML and vanila CSS, I did some small projects. I learned the Javascript basic and DOM manipulation with vanila JavaScript.  
               </p>
             </div>
             <hr className="bg-white" />
