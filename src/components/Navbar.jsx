@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex items-center justify-around py-2 fixed top-0 z-10 transition-all duration-300 w-full ${
+      className={`flex items-center justify-around py-2 fixed top-0 z-10 transition-all duration-300 w-full mt-3 ${
         scrolling ? "bg-gray-900 text-white shadow-lg" : "bg-transparent"
       } `}
     >

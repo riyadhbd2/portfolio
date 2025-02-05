@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section id="experience" className="container mx-auto flex flex-col items-center justify-center">
       <div className="text-center leading-8">
-        <h1 className="text-4xl font-bold">Experience</h1>
+        <h1 className="text-4xl font-bold text-orange-400">Experience</h1>
         <p className="text-gray-400">
           My work experience as a software engineer and workiing on different
           companies and projects.

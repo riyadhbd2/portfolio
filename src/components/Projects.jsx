@@ -7,7 +7,7 @@ const Projects = () => {
       className="container mx-auto mt-10 flex flex-col items-center justify-center"
     >
       <div className="text-center leading-8">
-        <h1 className="text-4xl font-bold">Projects</h1>
+        <h1 className="text-4xl font-bold text-orange-400">Projects</h1>
         <p className="text-gray-400">
           I have worked on a wide range of projects. From web apps to android
           apps. Here are some of my projects.

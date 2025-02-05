@@ -20,18 +20,22 @@ const Hero = () => {
 
       {/*  */}
       <h1 className="text-center w-[70%] text-xl font-bold">
+        <span className="text-xl ">Hi, I am</span>
+        <br />
         <span className="text-4xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-          I am Easir Arafat,
+          Easir Arafat,
         </span>{" "}
         <motion.h1
-          className="text-4xl font-bold text-center text-white mt-3"
+          className="text-2xl font-bold text-center text-white mt-3"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.1, color: "#ffcc00" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Full-Stack Web Developer Based in Germany.
+          <h1 className="text-white">Full-Stack Web Developer Based in Germany.</h1>
+          
         </motion.h1>
+      
       </h1>
       <p className="w-[50%] text-center text-base leading-7 text-gray-400">
         I am committed to continuous learning and delivering clean, efficient

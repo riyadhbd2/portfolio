@@ -4,7 +4,7 @@ export const Education = () => {
   return (
     <section id="education" className="container mx-auto flex flex-col items-center justify-center mt-10">
        <div className="text-center leading-8">
-        <h1 className="text-4xl font-bold">Education</h1>
+        <h1 className="text-4xl font-bold text-orange-400">Education</h1>
         <p className="text-gray-400">
         My education has been a journey of self-discovery and growth. My educational details are as follows.
         </p>

@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <section id="contact" className="mt-10">
       <div className="text-center leading-10">
-        <h1 className="text-4xl font-bold">Contact</h1>
+        <h1 className="text-4xl font-bold text-orange-400">Contact</h1>
         <p className="text-gray-400">
           Feel free to reach out to me for any questions or opportunities!
         </p>

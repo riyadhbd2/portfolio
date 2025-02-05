@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section id="skills" className="container mx-auto mt-8">
       <div className="text-center leading-8">
-        <h1 className="text-4xl font-bold">Skills</h1>
+        <h1 className="text-4xl text-orange-400 font-bold">Skills</h1>
         <p className="text-gray-400">
           Here are some of my skills on which I have been working on for the
           past 3 years

@@ -6,7 +6,7 @@ import { Link } from "react-router";
 const Footer = () => {
   return (
     <div className="text-center mt-36">
-      <h1 className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent text-lg font-bold">
+      <h1 className="text-orange-400 text-lg font-bold">
         Easir Arafat
       </h1>
       <div className="flex gap-5 justify-center mt-3">
