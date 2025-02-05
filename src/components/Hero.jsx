@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router";
 import profile from "../assets/profile.png";
 
 const Hero = () => {
@@ -20,7 +21,9 @@ const Hero = () => {
       />
 
       {/* text */}
-      <h2 className="text-center w-[70%] text-2xl font-bold mt-5">Hi I am <span className="text-orange-400">Easir Arafat,</span></h2>
+      <h2 className="text-center w-[70%] text-2xl font-bold mt-5">
+        Hi I am <span className="text-orange-400">Easir Arafat,</span>
+      </h2>
       {/* animated text */}
       <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
         {text.split("").map((char, index) => (
@@ -61,9 +64,11 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          <button className="border font-bold border-white px-10 py-2 rounded-full hover:border-blue-500">
-            Hire Me
-          </button>
+          <Link to="#contact">
+            <button className="border font-bold border-white px-10 py-2 rounded-full hover:border-blue-500">
+              Hire Me
+            </button>
+          </Link>
         </div>
       </div>
     </section>
