@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router";
 
@@ -38,7 +39,9 @@ const Navbar = () => {
           className="hidden lg:block text-2xl font-bold text-orange-400"
         >
           {" "}
-          <h1>Easir Arafat</h1>
+          <p className="flex items-center justify-center">
+            <FaLessThan /> Easir Arafat <span></span> <FaGreaterThan />{" "}
+          </p>
         </Link>
         {/* Burger Menu Button */}
         <button className="lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
