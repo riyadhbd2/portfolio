@@ -30,7 +30,7 @@ const Skills = () => {
         <h1 className="text-4xl text-orange-400 font-bold">Skills</h1>
         <p className="text-gray-400">
           Here are some of my skills on which I have been working on for the
-          past 3 years
+          past 5 years
         </p>
       </div>
       {/* skill cards */}
