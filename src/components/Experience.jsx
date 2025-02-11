@@ -1,4 +1,6 @@
 import React from "react";
+import tech_point from "../assets/tech_point.png";
+import preview from "../assets/preview.png";
 
 const Experience = () => {
   return (
@@ -16,7 +18,7 @@ const Experience = () => {
           <li className="">
             <hr />
             <div className="timeline-middle">
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -27,7 +29,8 @@ const Experience = () => {
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                   clipRule="evenodd"
                 />
-              </svg>
+              </svg> */}
+              <img className="w-20" src={tech_point} alt="" />
             </div>
             <div className="timeline-end mb-10">
               <time className="font-mono italic text-sm">
@@ -45,7 +48,7 @@ const Experience = () => {
           {/* Experience last */}
           <li className="">
             <div className="timeline-middle">
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -56,7 +59,8 @@ const Experience = () => {
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                   clipRule="evenodd"
                 />
-              </svg>
+              </svg> */}
+              <img className="w-20" src={preview} alt="" />
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic text-sm">
