@@ -9,31 +9,31 @@ const Footer = () => {
       <h1 className="text-orange-400 text-lg font-bold">Easir Arafat</h1>
       <div className="flex gap-5 justify-center mt-3">
         <Link
-          className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-600 via-purple-600 to-red-600"
+          className="text-white hover:bg-clip-text hover:text-orange-400"
           to="#about"
         >
           About
         </Link>
         <Link
-          className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-600 via-purple-600 to-red-600"
+          className="text-white hover:bg-clip-text hover:text-orange-400"
           to="#skills"
         >
           Skills
         </Link>
         <Link
-          className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-600 via-purple-600 to-red-600"
+          className="text-white hover:bg-clip-text hover:text-orange-400"
           to="#experience"
         >
           Experience
         </Link>
         <Link
-          className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-600 via-purple-600 to-red-600"
+          className="text-white hover:bg-clip-text hover:text-orange-400"
           to="#projects"
         >
           Projects
         </Link>
         <Link
-          className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-600 via-purple-600 to-red-600"
+          className="text-white hover:bg-clip-text hover:text-orange-400"
           to="#education"
         >
           Education

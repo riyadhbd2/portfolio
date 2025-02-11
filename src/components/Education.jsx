@@ -6,7 +6,7 @@ export const Education = () => {
   return (
     <section
       id="education"
-      className="container mx-auto flex flex-col items-center justify-center mt-10"
+      className="container mx-auto flex flex-col items-center justify-center mt-20"
     >
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold text-orange-400">Education</h1>

@@ -1,10 +1,13 @@
 import React from "react";
-import tech_point from "../assets/tech_point.png";
 import preview from "../assets/preview.png";
+import tech_point from "../assets/tech_point.png";
 
 const Experience = () => {
   return (
-    <section id="experience" className="container mx-auto flex flex-col items-center justify-center">
+    <section
+      id="experience"
+      className="container mx-auto flex flex-col items-center justify-center mt-20"
+    >
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold text-orange-400">Experience</h1>
         <p className="text-gray-400">
@@ -12,7 +15,7 @@ const Experience = () => {
           companies and projects.
         </p>
       </div>
-      <div className="text-gray-400 w-2/3 mt-5">
+      <div className="text-gray-400 w-2/3 mt-10">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Experience first */}
           <li className="">
@@ -40,7 +43,11 @@ const Experience = () => {
               <div className="text-xl font-black">Frontend Developer</div>
               <p>Tech Point Ltd. </p>
               <p className="mt-5">
-                I did my first full time job in this company. There was a simple e-commerce website where I had to manage the Frontend part. The website was built by HTML, CSS and JavaScript. The Bootstap also used to design the website. Here I got the industry level application experience. 
+                I did my first full time job in this company. There was a simple
+                e-commerce website where I had to manage the Frontend part. The
+                website was built by HTML, CSS and JavaScript. The Bootstap also
+                used to design the website. Here I got the industry level
+                application experience.
               </p>
             </div>
             <hr className="bg-white" />
@@ -66,14 +73,14 @@ const Experience = () => {
               <time className="font-mono italic text-sm">
                 13 June 2014 - 31 December 2015
               </time>
-              <div className="text-xl font-black">
-                Junior Frontend Intern
-              </div>
+              <div className="text-xl font-black">Junior Frontend Intern</div>
               <p>Preview Technologies</p>
               <p className="mt-5">
-                I did my first internship in this company. 
-                Here I gained the professional
-                knowledge of Frontend technology like HTML, CSS and JavaScript basic. With HTML and vanila CSS, I did some small projects. I learned the Javascript basic and DOM manipulation with vanila JavaScript.  
+                I did my first internship in this company. Here I gained the
+                professional knowledge of Frontend technology like HTML, CSS and
+                JavaScript basic. With HTML and vanila CSS, I did some small
+                projects. I learned the Javascript basic and DOM manipulation
+                with vanila JavaScript.
               </p>
             </div>
             <hr className="bg-white" />

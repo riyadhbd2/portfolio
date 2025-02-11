@@ -38,7 +38,7 @@ const Navbar = () => {
         >
           {" "}
           <p className="flex items-center justify-center">
-            <FaLessThan /> Easir Arafat <span></span> <FaGreaterThan />{" "}
+            <FaLessThan />  <span className="text-2xl">Easir Arafat</span> <FaGreaterThan />{" "}
           </p>
         </Link>
         {/* Burger Menu Button */}
@@ -71,20 +71,20 @@ const Navbar = () => {
       </div>
       {/* 2nd part */}
       <ul className="hidden lg:flex items-center list-none gap-1 text-base">
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-          <Link to="#about">About</Link>
+        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-orange-400">
+          <Link to="#about" className="text-lg">About</Link>
         </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-          <Link to="#skills">Skills</Link>
+        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-orange-400">
+          <Link to="#skills" className="text-lg">Skills</Link>
         </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-          <Link to="#projects">Projects</Link>
+        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-orange-400">
+          <Link to="#projects" className="text-lg">Projects</Link>
         </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-          <Link to="#education">Education</Link>
+        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-orange-400">
+          <Link to="#education" className="text-lg">Education</Link>
         </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-          <Link to="#contact">Contact</Link>
+        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-orange-400">
+          <Link to="#contact" className="text-lg">Contact</Link>
         </li>
       </ul>
       {/* 3rd part */}

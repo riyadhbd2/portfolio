@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="container mx-auto mt-10 flex flex-col items-center justify-center"
+      className="container mx-auto mt-20 flex flex-col items-center justify-center"
     >
       <div className="text-center leading-8">
         <h1 className="text-4xl font-bold text-orange-400">Projects</h1>
