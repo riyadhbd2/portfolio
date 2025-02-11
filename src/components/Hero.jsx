@@ -39,7 +39,7 @@ const Hero = () => {
         Hi I am <span className="text-orange-400">Easir Arafat,</span>
       </h2>
       {/* animated text */}
-      <h1 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
+      <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
         {text.split("").map((char, index) => (
           <motion.span
             key={index}
