@@ -13,7 +13,7 @@ export const Education = () => {
           educational details are as follows.
         </p>
       </div>
-      <div className="text-gray-400 w-2/3 mt-5">
+      <div className="text-gray-400 w-2/3 mt-10">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Master education */}
           <li className="">
@@ -32,9 +32,9 @@ export const Education = () => {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono text-sm italic">October 2018 - Present</time>
-              <p>Master's in Automotive Software Engineering</p>
-              <div className="text-xl font-black">
+              <time className="font-mono text-sm italic">September 2025 - Expected</time>
+              <p className="text-xl font-bold">Master's in Automotive Software Engineering</p>
+              <div className="text-md">
                 Chemnitz University of Technology
               </div>
               <p className="mt-5">
@@ -63,10 +63,10 @@ export const Education = () => {
             <div className="timeline-end mb-10">
               <time className="font-mono italic text-sm">
                 {" "}
-                January 2014 - June 2014
+                June 2014 - Completed
               </time>
-              <p>Bachelor's in Computer Science and Engineering</p>
-              <div className="text-xl font-black">
+              <p className="text-xl font-bold">Bachelor's in Computer Science and Engineering</p>
+              <div className="text-md">
                 Daffodil International University
               </div>
               <p className="mt-5">
