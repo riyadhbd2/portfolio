@@ -4,6 +4,18 @@ import { Link } from "react-router";
 import profile from "../assets/profile.png";
 
 const Hero = () => {
+
+  // CV download function
+  const handleDownload = () =>{
+    const cvUrl = "/cv.pdf"; // Ensure your CV is in the 'public' folder
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "Easir_Arafat_CV.pdf"; // The filename when downloaded
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } 
+
   const text = "Full- Stack Web Developer Based in Germany";
   return (
     <section
@@ -52,12 +64,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center gap-5 mb-5">
         <div>
           <button
-            onClick={() =>
-              window.open(
-                "https://docs.google.com/document/d/1Z53LJrIQHeEkjki2OHqwlOGD7cJoXyo-_Gdn5QF-CXA/edit?usp=sharing",
-                "_blank"
-              )
-            }
+            onClick={handleDownload}
             className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300"
           >
             Check Resume
