@@ -38,7 +38,7 @@ export const Education = () => {
                 Chemnitz University of Technology
               </div>
               <p className="mt-5">
-                I am currently pursuing Master's Degree in Automotive Software Enginnering in TU CHemnitz. I have completed internship on "Syntheric Data generation" in my University. Curreently I am doing thesis on "Configurable, Compact and Static Web Visualization of RDF Graphs". I have completed so many courses in the previous semesters. Among them "Advance Management of Data", "Multicore programming", "Software Enginnering and Programming Basics" and "Software Service Engineering" helped me to increase the deep knowledge of Programming Language. 
+                I am currently pursuing Master's Degree in Automotive Software Enginnering in TU CHemnitz. I have completed internship on "Syntheric Data generation" in my University. Curreently I am doing thesis on "Configurable, Compact and Static Web Visualization of RDF Graphs".
               </p>
             </div>
             <hr className="bg-white" />
@@ -70,7 +70,7 @@ export const Education = () => {
                 Daffodil International University
               </div>
               <p className="mt-5">
-                I completed my Bachelor's degree in Computer Science and Engineering from Daffodil International University. This is one of the best University in Bangladesh. During my studies, I developed a strong foundation in software development, algorithms, and system design. My academic journey equipped me with skills in programming, web development, and data structures, allowing me to build innovative tech solutions. I am passionate about coding, problem-solving, and exploring emerging technologies to drive digital transformation.
+                I completed my Bachelor's degree in Computer Science and Engineering from Daffodil International University. During my studies, I developed a strong foundation in software development, algorithms, and system design.
               </p>
             </div>
             <hr className="bg-white" />
