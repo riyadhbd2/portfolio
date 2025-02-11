@@ -34,7 +34,7 @@ const Skills = () => {
         </p>
       </div>
       {/* skill cards */}
-      <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 justify-center gap-5 w-3/4 mx-auto text-center m-10">
+      <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 justify-center gap-5 w-full md:w-3/4 mx-auto text-center m-10">
         {/* Frontend */}
         <motion.div
           className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"

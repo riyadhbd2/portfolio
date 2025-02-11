@@ -25,7 +25,7 @@ const Projects = () => {
         </button>
       </div>
       {/* Project List */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-5 w-2/3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-5 w-full md:w-3/4">
         {/* project one */}
         <div className="border border-gray-700 rounded-lg h-96">
           <div className=" m-5">
