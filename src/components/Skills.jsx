@@ -145,25 +145,25 @@ const Skills = () => {
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Backend</h1>
           <div className="flex justify-center items-center gap-2">
             {/* 1st row 1st line */}
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl">
               <p>
                 <FaNodeJs className="text-[#83CD29] text-xl hover:text-[#6AAE20] transition duration-300
 "/>
               </p>
-              <p className="text-gray-400">Node Js</p>
+              <p className="text-gray-400 text-sm md:text-lg">Node Js</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
               <p className="bg-white font-bold text-black text-[10px] p-[1px]">
                 Ex
               </p>
-              <p className="text-gray-400">Express Js</p>
+              <p className="text-gray-400 text-sm md:text-lg">Express Js</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
               <p>
                 <DiMongodb className="text-[#47A248] text-xl hover:text-[#3B8739] transition duration-300
 "/>
               </p>
-              <p className="text-gray-400">Mongo DB</p>
+              <p className="text-gray-400 text-sm md:text-lg">Mongo DB</p>
             </div>
           </div>
           {/* 1st row 2nd line */}
