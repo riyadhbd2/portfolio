@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Small Transparent Dropdown for Mobile Menu */}
         {menuOpen && (
           <div className="absolute top-12 left-0 bg-transparent shadow-lg p-3 rounded-lg">
-            <ul className="flex flex-col gap-2 text-white text-sm  bg-opacity-75 p-3 rounded-lg">
+            <ul className="flex flex-col gap-2 text-white text-xl  bg-opacity-75 p-3 rounded-lg">
               <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
                 <Link to="#about">About</Link>
               </li>

@@ -52,6 +52,7 @@ const Contact = () => {
             name="email"
             id=""
             placeholder="Your Email"
+            required
           />
           <input
             className="border p-2 border-gray-600 rounded-xl h-12 placeholder:px-3"
@@ -59,6 +60,7 @@ const Contact = () => {
             name="name"
             id=""
             placeholder="Your Name"
+            required
           />
           <input
             className="border p-2 border-gray-600 rounded-xl h-12 placeholder:p-3"
@@ -66,6 +68,7 @@ const Contact = () => {
             name="subject"
             id=""
             placeholder="Subject"
+            required
           />
           <textarea
             className="border p-2 border-gray-600 rounded-xl h-36 placeholder:p-3"
@@ -74,6 +77,7 @@ const Contact = () => {
             cols="50"
             rows="10"
             placeholder="Message"
+            required
           ></textarea>
           <button
             type="submit"

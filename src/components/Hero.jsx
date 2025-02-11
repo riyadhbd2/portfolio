@@ -16,7 +16,9 @@ const Hero = () => {
     document.body.removeChild(link);
   } 
 
-  const text = "Full- Stack Web Developer Based in Germany";
+  // text
+  const text = "Full-Stack Web Developer Based in Germany";
+
   return (
     <section
       id="hero"
@@ -33,11 +35,11 @@ const Hero = () => {
       />
 
       {/* text */}
-      <h2 className="text-center w-[70%] text-2xl font-bold mt-5">
+      <h2 className="text-center w-[70%] text-3xl font-bold mt-5">
         Hi I am <span className="text-orange-400">Easir Arafat,</span>
       </h2>
       {/* animated text */}
-      <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
+      <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
         {text.split("").map((char, index) => (
           <motion.span
             key={index}

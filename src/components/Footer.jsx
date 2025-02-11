@@ -71,7 +71,7 @@ const Footer = () => {
           <FaLinkedin className="text-[#0A66C2] text-xl hover:text-[#004182] transition duration-300" />
         </button>
       </div>
-      <p className="mt-3 pb-8">© 2024 Easir Arafat. All rights reserved.</p>
+      <p className="mt-3 pb-8">© 2025 Easir Arafat. All rights reserved.</p>
     </div>
   );
 };
