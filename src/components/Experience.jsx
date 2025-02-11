@@ -32,7 +32,7 @@ const Experience = () => {
             <div className="timeline-end mb-10">
               <time className="font-mono italic text-sm">
                 {" "}
-                1 April 2016 - 31 October 2015
+                1 April 2016 - 31 October 2017
               </time>
               <div className="text-xl font-black">Frontend Developer</div>
               <p>Tech Point Ltd. </p>
@@ -60,7 +60,7 @@ const Experience = () => {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic text-sm">
-                13 October 2014 - 27 April 2015
+                13 June 2014 - 31 December 2015
               </time>
               <div className="text-xl font-black">
                 Junior Frontend Intern

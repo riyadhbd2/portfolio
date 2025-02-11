@@ -4,12 +4,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router";
 
 const Navbar = () => {
-  const [scrolling, setScrolling] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  const gradientStyle = {
-    background: "linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%)",
-  };
+  const [scrolling, setScrolling] = useState(false);
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // scrolling bg useffect
   useEffect(() => {
@@ -93,7 +91,6 @@ const Navbar = () => {
       <div>
         <button
           onClick={() => window.open("https://github.com/riyadhbd2", "_blank")}
-          style={gradientStyle}
           className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300"
         >
           Github Profile

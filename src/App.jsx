@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 const App = () => {
+  
   // scrolling function
   function ScrollToSection() {
     const location = useLocation();
