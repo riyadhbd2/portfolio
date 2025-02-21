@@ -1,100 +1,65 @@
-import React from "react";
+import { useState } from "react";
 
-const Projects = () => {
+export default function Projects() {
+  const [filter, setFilter] = useState("All");
+
+  const projects = [
+    { id: 1, title: "Project One", category: "React JS" },
+    { id: 2, title: "Project Two", category: "Next JS" },
+    { id: 3, title: "Project Three", category: "React Native" },
+    { id: 4, title: "Project Four", category: "React JS" },
+    { id: 5, title: "Project Five", category: "Next JS" },
+    { id: 6, title: "Project Six", category: "React Native" },
+  ];
+
+  const categories = ["All", "React JS", "Next JS", "React Native"];
+
+  const filteredProjects =
+    filter === "All" ? projects : projects.filter((p) => p.category === filter);
+
   return (
     <section
       id="projects"
       className="container mx-auto mt-20 flex flex-col items-center justify-center"
     >
-      <div className="text-center leading-8">
+      <div className="max-w-5xl mx-auto p-5 text-center leading-8">
         <h1 className="text-4xl font-bold text-orange-400">Projects</h1>
         <p className="text-gray-400">
-          I have worked on a wide range of full stack projects. Here are some example.
+          {" "}
+          I have worked on a wide range of full stack projects. Here are some
+          example.{" "}
         </p>
-      </div>
-      {/* filter button */}
-      <div className="flex items-center justify-center mt-8">
-        <button className="border-2 border-gray-400 rounded-l-md px-3 py-2  text-sm text-gray-400">
-          ALL
-        </button>
-        <button className="border-2 border-gray-400  px-3 py-2 text-sm text-gray-400">
-          REACT APP
-        </button>
-        <button className="border-2 border-gray-400 rounded-r-md px-3 py-2 text-sm text-gray-400">
-          NEXT JS
-        </button>
-      </div>
-      {/* Project List */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-5 w-full md:w-3/4">
-        {/* project one */}
-        <div className="border border-gray-700 rounded-lg h-96">
-          <div className=" m-5">
-            <div className="flex items-center justify-center">
-              <img
-                className="w-60"
-                src="https://cardoctor.ie/wp-content/uploads/2021/12/LogoCarDoctor_hex.png"
-                alt=""
-              />
-            </div>
 
-            <div>
-              <p>React.js</p>
-            </div>
-            <h1>Car Doctor</h1>
-            <p>Date: </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatibus, quasi?
-            </p>
-          </div>
+        {/* Filter Buttons */}
+        <div className="flex justify-center gap-4 mb-6 mt-8">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`px-4 py-2 rounded-md ${
+                filter === category
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200 text-gray-700"
+              }`}
+              onClick={() => setFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
         </div>
-        {/* project two */}
-        <div className="border border-gray-700 rounded-lg h-96">
-          <div className="m-5">
-            <div className="flex items-center justify-center">
-              <img
-                className="w-60"
-                src="https://cardoctor.ie/wp-content/uploads/2021/12/LogoCarDoctor_hex.png"
-                alt=""
-              />
-            </div>
 
-            <div>
-              <p>React.js</p>
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-5 w-full md:w-3/4">
+          {filteredProjects.map((project) => (
+            <div
+              key={project.id}
+              className="p-5 shadow-lg border border-gray-700 rounded-lg h-96"
+            >
+              <h3 className="text-xl font-semibold">{project.title}</h3>
+              <p className="text-gray-500">{project.category}</p>
             </div>
-            <h1>Car Doctor</h1>
-            <p>Date: </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatibus, quasi?
-            </p>
-          </div>
-        </div>
-        {/* project three */}
-        <div className="border rounded-lg border-gray-700 h-96">
-          <div className="m-5">
-            <div className="flex items-center justify-center">
-              <img
-                className="w-60"
-                src="https://cardoctor.ie/wp-content/uploads/2021/12/LogoCarDoctor_hex.png"
-                alt=""
-              />
-            </div>
-
-            <div>
-              <p>React.js</p>
-            </div>
-            <h1>Car Doctor</h1>
-            <p>Date: </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatibus, quasi?
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default Projects;
+}

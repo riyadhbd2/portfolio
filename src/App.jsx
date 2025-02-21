@@ -9,6 +9,9 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
+
+
+
 const App = () => {
   
   // scrolling function
@@ -30,16 +33,16 @@ const App = () => {
   //
 
   return (
-    <div>
+    <div >
+     
       <BrowserRouter>
         <ScrollToSection />
         <Navbar></Navbar>
-
         <Routes>
           <Route
             path="*"
             element={
-              <div>
+              <div > 
                 <section id="about">
                   <Hero></Hero>
                 </section>
