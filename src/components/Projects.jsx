@@ -22,13 +22,14 @@ export default function Projects() {
       id="projects"
       className="container mx-auto mt-20 flex flex-col items-center justify-center"
     >
-      <div className="max-w-5xl mx-auto p-5 text-center leading-8">
+      <div className="p-5 text-center leading-8">
         <h1 className="text-4xl font-bold text-orange-400">Projects</h1>
         <p className="text-gray-400">
           {" "}
           I have worked on a wide range of full stack projects. Here are some
           example.{" "}
         </p>
+      </div>
 
         {/* Filter Buttons */}
         <div className="flex justify-center gap-4 mb-6 mt-8">
@@ -37,7 +38,7 @@ export default function Projects() {
               key={category}
               className={`px-4 py-2 rounded-md ${
                 filter === category
-                  ? "bg-blue-500 text-white"
+                  ? "bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 py-2 px-5 rounded-full text-white"
                   : "bg-gray-200 text-gray-700"
               }`}
               onClick={() => setFilter(category)}
@@ -48,7 +49,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-5 w-full md:w-3/4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto text-center m-10">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
@@ -59,7 +60,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-      </div>
+      
     </section>
   );
 }
