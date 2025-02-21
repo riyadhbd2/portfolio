@@ -10,6 +10,9 @@ export default function Projects() {
     { id: 4, title: "Project Four", category: "React JS" },
     { id: 5, title: "Project Five", category: "Next JS" },
     { id: 6, title: "Project Six", category: "React Native" },
+    { id: 7, title: "Project Seven", category: "React JS" },
+    { id: 8, title: "Project Eight", category: "React Native" },
+    { id: 9, title: "Project Nine", category: "Next JS" }
   ];
 
   const categories = ["All", "React JS", "Next JS", "React Native"];
