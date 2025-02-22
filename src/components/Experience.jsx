@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import preview from "../assets/preview.png";
 import tech_point from "../assets/tech_point.png";
@@ -23,7 +24,11 @@ const Experience = () => {
             <div className="timeline-middle">
               <img className="w-20" src={tech_point} alt="" />
             </div>
-            <div className="timeline-end ml-5 mb-8 border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="timeline-end ml-5 mb-8 border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5"
+            >
               <time className="font-mono italic text-xs">
                 {" "}
                 1 April 2016 - 31 October 2017
@@ -37,7 +42,7 @@ const Experience = () => {
                 used to design the website. Here I got the industry level
                 application experience.
               </p>
-            </div>
+            </motion.div>
             <hr className="bg-white" />
           </li>
           {/* Experience last */}
@@ -45,7 +50,11 @@ const Experience = () => {
             <div className="timeline-middle">
               <img className="w-20" src={preview} alt="" />
             </div>
-            <div className="timeline-start mr-5 mb-8 md:text-end border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5 ">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="timeline-start mr-5 mb-8 md:text-end border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5 "
+            >
               <time className="font-mono italic text-xs">
                 13 June 2014 - 31 December 2015
               </time>
@@ -58,7 +67,7 @@ const Experience = () => {
                 projects. I learned the Javascript basic and DOM manipulation
                 with vanila JavaScript.
               </p>
-            </div>
+            </motion.div>
             <hr className="bg-white" />
           </li>
         </ul>

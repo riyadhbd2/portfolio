@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import daffodil_logo from "../assets/daffodil_logo.png";
 import university_logo from "../assets/university_logo.png";
@@ -22,7 +23,11 @@ export const Education = () => {
             <div className="timeline-middle">
               <img className="w-20" src={university_logo} alt="" />
             </div>
-            <div className="timeline-start mr-5 mb-10 md:text-end border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5 ">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="timeline-start mr-5 mb-10 md:text-end border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5 "
+            >
               <time className="font-mono text-sm italic">
                 September 2025 - Expected
               </time>
@@ -37,7 +42,7 @@ export const Education = () => {
                 doing thesis on "Configurable, Compact and Static Web
                 Visualization of RDF Graphs".
               </p>
-            </div>
+            </motion.div>
             <hr className="bg-white" />
           </li>
           {/* Bachelor Education */}
@@ -46,7 +51,11 @@ export const Education = () => {
             <div className="timeline-middle">
               <img className="w-20" src={daffodil_logo} alt="" />
             </div>
-            <div className="timeline-end ml-5 mb-10 border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="timeline-end ml-5 mb-10 border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5"
+            >
               <time className="font-mono italic text-sm">
                 {" "}
                 June 2014 - Completed
@@ -61,7 +70,7 @@ export const Education = () => {
                 studies, I developed a strong foundation in software
                 development, algorithms, and system design.
               </p>
-            </div>
+            </motion.div>
             <hr className="bg-white" />
           </li>
         </ul>
