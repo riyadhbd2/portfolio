@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Projects() {
   const [filter, setFilter] = useState("All");
@@ -102,6 +102,20 @@ export default function Projects() {
 
   const filteredProjects =
     filter === "All" ? projects : projects.filter((p) => p.category === filter);
+  
+
+    // 🚀 UseEffect to disable scrolling when modal is open
+    useEffect(() => {
+      if (selectedProject) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+  
+      return () => {
+        document.body.classList.remove("overflow-hidden");
+      };
+    }, [selectedProject]);
 
 
 
