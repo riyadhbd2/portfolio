@@ -47,25 +47,25 @@ const Skills = () => {
           {/* 1st row 1st line */}
           <div className="flex justify-center items-center gap-2">
             {/* single skill */}
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <FaHtml5 className="text-[#E34F26] text-xl hover:text-[#D03A18] transition duration-300
+                <FaHtml5 className="text-[#E34F26] text-md hover:text-[#D03A18] transition duration-300
 " />
               </p>
               <p className="text-gray-400">HTML</p>
             </div>
 
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <IoLogoCss3 className="text-[#1572B6] text-xl hover:text-[#12688B] transition duration-300
+                <IoLogoCss3 className="text-[#1572B6] text-md hover:text-[#12688B] transition duration-300
 " />
               </p>
               <p className="text-gray-400">CSS</p>
             </div>
 
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <FaReact className="text-[#61DAFB] text-xl hover:text-[#21A1F1] transition duration-300
+                <FaReact className="text-[#61DAFB] text-md hover:text-[#21A1F1] transition duration-300
 " />
               </p>
               <p className="text-gray-400">React Js</p>
@@ -73,16 +73,16 @@ const Skills = () => {
           </div>
           {/* 1st row 2nd line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <IoLogoJavascript className="text-[#F7DF1E] text-xl hover:text-[#E1C100] transition duration-300
+                <IoLogoJavascript className="text-[#F7DF1E] text-md hover:text-[#E1C100] transition duration-300
 " />
               </p>
               <p className="text-gray-400">JavaScript</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <SiRedux className="text-[#764ABC] text-xl hover:text-[#5b3d99] transition duration-300
+                <SiRedux className="text-[#764ABC] text-md hover:text-[#5b3d99] transition duration-300
 " />
               </p>
               <p className="text-gray-400">Redux</p>
@@ -90,23 +90,23 @@ const Skills = () => {
           </div>
           {/* 1st row 3rd line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <RiTailwindCssFill className="text-[#06B6D4] text-xl hover:text-[#0196A7] transition duration-300
+                <RiTailwindCssFill className="text-[#06B6D4] text-md hover:text-[#0196A7] transition duration-300
 " />
               </p>
               <p className="text-gray-400">Tailwind</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <FaBootstrap className="text-[#563D7C] text-xl hover:text-[#4c3575] transition duration-300
+                <FaBootstrap className="text-[#563D7C] text-md hover:text-[#4c3575] transition duration-300
 " />
               </p>
               <p className="text-gray-400">Bootstrap</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <SiNextdotjs className="text-white text-xl hover:text-gray-400 transition duration-300
+                <SiNextdotjs className="text-white text-md hover:text-gray-400 transition duration-300
 " />
               </p>
               <p className="text-gray-400">Next Js</p>
@@ -114,7 +114,7 @@ const Skills = () => {
           </div>
           {/* 1st row 4th line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
                 <img
                   src="https://mui.com/static/logo.png"
@@ -125,9 +125,9 @@ const Skills = () => {
               <p className="text-gray-400">Materrial UI</p>
             </div>
 
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <FaFlutter className="text-[#02569B] text-xl hover:text-[#0177B7] transition duration-300
+                <FaFlutter className="text-[#02569B] text-md hover:text-[#0177B7] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">Flutter</p>
@@ -145,39 +145,39 @@ const Skills = () => {
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Backend</h1>
           <div className="flex justify-center items-center gap-2">
             {/* 1st row 1st line */}
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl">
               <p>
-                <FaNodeJs className="text-[#83CD29] text-xl hover:text-[#6AAE20] transition duration-300
+                <FaNodeJs className="text-[#83CD29] text-md hover:text-[#6AAE20] transition duration-300
 "/>
               </p>
-              <p className="text-gray-400 text-sm md:text-lg">Node Js</p>
+              <p className="text-gray-400 text-sm md:text-md">Node Js</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
-              <p className="bg-white font-bold text-black text-[10px] p-[1px]">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
+              <p className="bg-white font-bold text-black text-[7px] p-[1px]">
                 Ex
               </p>
-              <p className="text-gray-400 text-sm md:text-lg">Express Js</p>
+              <p className="text-gray-400 text-sm md:text-md">Express Js</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <DiMongodb className="text-[#47A248] text-xl hover:text-[#3B8739] transition duration-300
+                <DiMongodb className="text-[#47A248] text-md hover:text-[#3B8739] transition duration-300
 "/>
               </p>
-              <p className="text-gray-400 text-sm md:text-lg">Mongo DB</p>
+              <p className="text-gray-400 text-sm md:text-md">Mongo DB</p>
             </div>
           </div>
           {/* 1st row 2nd line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <DiMysql className="text-[#00758F] text-xl hover:text-[#005F6B] transition duration-300
+                <DiMysql className="text-[#00758F] text-md hover:text-[#005F6B] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">My SQL</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-                <DiPostgresql className="text-[#336791] text-2xl hover:text-[#2c5d8c] transition duration-300
+                <DiPostgresql className="text-[#336791] text-lg hover:text-[#2c5d8c] transition duration-300
 " />
               </p>
               <p className="text-gray-400">PostGreSQL</p>
@@ -185,13 +185,13 @@ const Skills = () => {
           </div>
           {/* 1st row 3rd line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p className="text-xs bg-white text-black">RG</p>
               <p className="text-gray-400">RDF Graph</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-                <GrGraphQl className="text-[#E10098] text-xl hover:text-[#d10087] transition duration-300
+                <GrGraphQl className="text-[#E10098] text-md hover:text-[#d10087] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">GraphQL</p>
@@ -199,14 +199,14 @@ const Skills = () => {
           </div>
           {/* 1st row 4th line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
                 <FaPython className="text-[#306998] text-xl hover:text-[#276a8a] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">Python</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
                 <SiDjango />
               </p>
@@ -225,16 +225,16 @@ const Skills = () => {
           <h1 className="text-3xl text-gray-400 font-bold mt-3">DevOps</h1>
           <div className="flex justify-center items-center gap-2">
             {/* 1at row 1st line */}
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-                <FaDocker className="text-[#2496ED] text-xl hover:text-[#1F7BB6] transition duration-300
+                <FaDocker className="text-[#2496ED] text-md hover:text-[#1F7BB6] transition duration-300
 " />
               </p>
               <p className="text-gray-400">Docker</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-                <AiOutlineKubernetes className="text-[#326CE5] text-xl hover:text-[#2858A4] transition duration-300
+                <AiOutlineKubernetes className="text-[#326CE5] text-md hover:text-[#2858A4] transition duration-300
 " />
               </p>
               <p className="text-gray-400">Kubernetes</p>
@@ -242,16 +242,16 @@ const Skills = () => {
           </div>
           {/* 1st row 2nd line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-                <FaAws className="text-[#FF9900] text-xl hover:text-[#E78A00] transition duration-300
+                <FaAws className="text-[#FF9900] text-md hover:text-[#E78A00] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">AWS</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-                <VscAzure className="text-[#0078D4] text-xl hover:text-[#005A9E] transition duration-300
+                <VscAzure className="text-[#0078D4] text-md hover:text-[#005A9E] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">Azure</p>
@@ -273,16 +273,16 @@ const Skills = () => {
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Others</h1>
           <div className="flex justify-center items-center gap-2">
             {/* 1st line 1st row */}
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <FaGit className="text-[#F1502F] text-xl hover:text-[#D94E26] transition duration-300
+                <FaGit className="text-[#F1502F] text-md hover:text-[#D94E26] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">Git</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <SiPostman className="text-[#FF6A00] text-xl hover:text-[#E65B00] transition duration-300
+                <SiPostman className="text-[#FF6A00] text-md hover:text-[#E65B00] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">Postman</p>
@@ -290,21 +290,21 @@ const Skills = () => {
           </div>
           {/* 1st row 2nd line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl">
               <p>
-              <FaGithub className="text-white text-xl hover:text-gray-400 transition duration-300"/>
+              <FaGithub className="text-white text-lg hover:text-gray-400 transition duration-300"/>
               </p>
               <p className="text-gray-400">GitHub</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-              <IoLogoVercel className="text-white text-xl hover:text-gray-400 transition duration-300"/>
+              <IoLogoVercel className="text-white text-md hover:text-gray-400 transition duration-300"/>
               </p>
               <p className="text-gray-400">Vercel</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-              <BiLogoNetlify className="text-[#00C7B7] text-xl hover:text-[#00A19D] transition duration-300
+              <BiLogoNetlify className="text-[#00C7B7] text-md hover:text-[#00A19D] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">Netlify</p>
@@ -312,16 +312,16 @@ const Skills = () => {
           </div>
           {/* 1st row 3rd line */}
           <div className="flex gap-2 items-center justify-center">
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-              <FaFigma className="text-[#F24E1E] text-xl hover:text-[#D43F18] transition duration-300
+              <FaFigma className="text-[#F24E1E] text-md hover:text-[#D43F18] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">Figma</p>
             </div>
-            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-2 rounded-xl ">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
               <p>
-              <VscVscode className="text-[#007ACC] text-xl hover:text-[#005A8D] transition duration-300
+              <VscVscode className="text-[#007ACC] text-md hover:text-[#005A8D] transition duration-300
 "/>
               </p>
               <p className="text-gray-400">VS Code</p>
