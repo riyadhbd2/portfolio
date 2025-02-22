@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Projects() {
-  
+
   const [filter, setFilter] = useState("All");
 
   const projects = [
@@ -64,6 +64,8 @@ export default function Projects() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
+            <img src="" alt="" />
+            <p></p>
             <h3 className="text-xl font-semibold">{project.title}</h3>
             <p className="text-gray-500">{project.category}</p>
           </motion.div>
