@@ -2,18 +2,19 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Projects() {
+  
   const [filter, setFilter] = useState("All");
 
   const projects = [
-    { id: 1, title: "Project One", category: "React JS" },
-    { id: 2, title: "Project Two", category: "Next JS" },
-    { id: 3, title: "Project Three", category: "React Native" },
-    { id: 4, title: "Project Four", category: "React JS" },
-    { id: 5, title: "Project Five", category: "Next JS" },
-    { id: 6, title: "Project Six", category: "React Native" },
-    { id: 7, title: "Project Seven", category: "React JS" },
-    { id: 8, title: "Project Eight", category: "React Native" },
-    { id: 9, title: "Project Nine", category: "Next JS" },
+    { id: 1, image: "", tech: [], title: "Project One", description: "", category: "React JS" },
+    { id: 2, image: "", tech: [], title: "Project Two", description: "", category: "Next JS" },
+    { id: 3, image: "", tech: [], title: "Project Three", description: "", category: "React Native" },
+    { id: 4, image: "", tech: [], title: "Project Four", description: "", category: "React JS" },
+    { id: 5, image: "", tech: [], title: "Project Five", description: "", category: "Next JS" },
+    { id: 6, image: "", tech: [], title: "Project Six", description: "", category: "React Native" },
+    { id: 7, image: "", tech: [], title: "Project Seven", description: "", category: "React JS" },
+    { id: 8, image: "", tech: [], title: "Project Eight", description: "", category: "React Native" },
+    { id: 9, image: "", tech: [], title: "Project Nine", description: "", category: "Next JS" }
   ];
 
   const categories = ["All", "React JS", "Next JS", "React Native"];
