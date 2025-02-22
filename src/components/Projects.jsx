@@ -170,7 +170,7 @@ export default function Projects() {
 
       {/* Dark Themed Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black flex items-center justify-center p-4 z-10">
           <div className="bg-gray-900 p-36 rounded-lg flex flex-col items-center shadow-lg h-3/4 md:w-3/6 w-full text-white border border-gray-500">
             <img className="h-3/4 w-3/4" src={logo} alt="" />
             <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
