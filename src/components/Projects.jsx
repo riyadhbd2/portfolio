@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.svg";
 
 export default function Projects() {
   const [filter, setFilter] = useState("All");
@@ -14,7 +15,7 @@ export default function Projects() {
       description: "",
       category: "React JS",
       liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one"
+      githubLink: "https://github.com/example/project-one",
     },
     {
       id: 2,
@@ -24,7 +25,7 @@ export default function Projects() {
       description: "",
       category: "Next JS",
       liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one"
+      githubLink: "https://github.com/example/project-one",
     },
     {
       id: 3,
@@ -54,7 +55,7 @@ export default function Projects() {
       description: "",
       category: "Next JS",
       liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one"
+      githubLink: "https://github.com/example/project-one",
     },
     {
       id: 6,
@@ -94,7 +95,7 @@ export default function Projects() {
       description: "",
       category: "Next JS",
       liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one"
+      githubLink: "https://github.com/example/project-one",
     },
   ];
 
@@ -102,22 +103,19 @@ export default function Projects() {
 
   const filteredProjects =
     filter === "All" ? projects : projects.filter((p) => p.category === filter);
-  
 
-    // 🚀 UseEffect to disable scrolling when modal is open
-    useEffect(() => {
-      if (selectedProject) {
-        document.body.classList.add("overflow-hidden");
-      } else {
-        document.body.classList.remove("overflow-hidden");
-      }
-  
-      return () => {
-        document.body.classList.remove("overflow-hidden");
-      };
-    }, [selectedProject]);
+  //  UseEffect to disable scrolling when modal is open
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
 
-
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [selectedProject]);
 
   return (
     <section
@@ -170,36 +168,39 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Modal */}
+      {/* Dark Themed Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+          <div className="bg-gray-900 p-36 rounded-lg flex flex-col items-center shadow-lg h-3/4 md:w-3/6 w-full text-white border border-gray-500">
+            <img className="h-3/4 w-3/4" src={logo} alt="" />
             <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
-            <p className="text-gray-600 mb-4">{selectedProject.description}</p>
+            <p className="text-gray-400 mb-4">{selectedProject.description}</p>
+
+            
 
             {/* Action Buttons */}
-            <div className="flex justify-between">
+            <div className="flex justify-between w-full">
               <a
                 href={selectedProject.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-500 text-white rounded-md"
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
               >
-                View Live
+                Live App
               </a>
               <a
                 href={selectedProject.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-gray-700 text-white rounded-md"
+                className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition"
               >
-                GitHub
+                View Code
               </a>
             </div>
 
             {/* Close Button */}
             <button
-              className="mt-4 w-full py-2 bg-red-500 text-white rounded-md"
+              className="mt-4 w-full  py-2 flex justify-center items-center  bg-red-600 text-white rounded-md hover:bg-red-700 transition"
               onClick={() => setSelectedProject(null)}
             >
               Close
