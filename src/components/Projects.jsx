@@ -35,7 +35,7 @@ export default function Projects() {
       </div>
 
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-4 mb-6 mt-8">
+        <div className="flex justify-center gap-4 mb-6 mt-3">
           {categories.map((category) => (
             <button
               key={category}
@@ -52,7 +52,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto text-center m-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto text-center m-1">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
