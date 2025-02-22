@@ -52,7 +52,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto text-center m-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto text-center">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
