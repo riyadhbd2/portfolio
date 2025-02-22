@@ -41,7 +41,7 @@ export default function Projects() {
               key={category}
               className={`px-4 py-2 rounded-md ${
                 filter === category
-                  ? "bg-violet-900 py-2 px-5 rounded-full text-white"
+                  ? "bg-indigo-600 py-2 px-5 rounded-full text-white"
                   : "bg-gray-200 text-gray-700"
               }`}
               onClick={() => setFilter(category)}
