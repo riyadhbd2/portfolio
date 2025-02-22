@@ -43,7 +43,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col gap-3 border border-gray-600 rounded-lg p-7 mt-10 w-full md:w-1/4"
+          className="flex flex-col gap-3 border border-gray-600 rounded-lg p-7 mt-10 w-full md:w-2/4 lg:w-2/4 xl:w-1/4"
         >
           <p className="text-xl font-bold">Email Me</p>
           <input
