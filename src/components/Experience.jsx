@@ -16,10 +16,10 @@ const Experience = () => {
           companies and projects.
         </p>
       </div>
-      <div className="text-gray-400 w-full xl:w-2/3 mt-10">
+      <div className="text-gray-400 w-full xl:w-2/3 md:m-1 mt-10">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Experience first */}
-          <li className="">
+          <li className="m-5">
             <hr />
             <div className="timeline-middle">
               <img className="w-20" src={tech_point} alt="" />
@@ -27,7 +27,7 @@ const Experience = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="timeline-end ml-5 mb-8 border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5"
+              className="timeline-start md:mr-5 mb-8 border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5"
             >
               <time className="font-mono italic text-xs">
                 {" "}
@@ -46,14 +46,14 @@ const Experience = () => {
             <hr className="bg-white" />
           </li>
           {/* Experience last */}
-          <li className="">
+          <li className="m-5">
             <div className="timeline-middle">
               <img className="w-20" src={preview} alt="" />
             </div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="timeline-start mr-5 mb-8 md:text-end border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5 "
+              className="timeline-end md:ml-5 mb-8 border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5"
             >
               <time className="font-mono italic text-xs">
                 13 June 2014 - 31 December 2015

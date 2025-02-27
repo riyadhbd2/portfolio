@@ -163,8 +163,7 @@ const Skills = () => {
                 <DiMongodb className="text-[#47A248] text-md hover:text-[#3B8739] transition duration-300
 "/>
               </p>
-              <p className="text-gray-400 ">Mongo DB</p>
-            </div>
+              <p className="text-gray-400 ">Mongo DB</p> </div>
           </div>
           {/* 1st row 2nd line */}
           <div className="flex gap-2 items-center justify-center">

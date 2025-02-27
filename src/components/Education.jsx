@@ -16,18 +16,20 @@ export const Education = () => {
           educational details are as follows.
         </p>
       </div>
-      <div className="text-gray-400 w-2/3 mt-10">
+      <div className="text-gray-400 w-full xl:w-2/3 md:m-1 mt-10">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Master education */}
-          <li className="">
+          <li className="m-10">
             <div className="timeline-middle">
               <img className="w-20" src={university_logo} alt="" />
             </div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="timeline-start mr-5 mb-10 md:text-end border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5 "
+              className="timeline-start md:mr-5 mb-8 border border-gray-600 rounded-lg px-5 py-5 w-full md:w-4/5 "
             >
+
+              {/* timeline-end ml-5 mb-10 border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5 */}
               <time className="font-mono text-sm italic">
                 September 2025 - Expected
               </time>
@@ -46,7 +48,7 @@ export const Education = () => {
             <hr className="bg-white" />
           </li>
           {/* Bachelor Education */}
-          <li className="">
+          <li className="m-10">
             <hr />
             <div className="timeline-middle">
               <img className="w-20" src={daffodil_logo} alt="" />
@@ -54,7 +56,7 @@ export const Education = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="timeline-end ml-5 mb-10 border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5"
+              className="timeline-end md:ml-5 mb-8 border border-gray-600 px-5 py-5 rounded-lg w-full md:w-4/5"
             >
               <time className="font-mono italic text-sm">
                 {" "}
