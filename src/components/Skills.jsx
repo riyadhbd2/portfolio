@@ -95,21 +95,21 @@ const Skills = () => {
                 <RiTailwindCssFill className="text-[#06B6D4] text-md hover:text-[#0196A7] transition duration-300
 " />
               </p>
-              <p className="text-gray-400">Tailwind</p>
+              <p className="text-gray-400 text-sm sm:text-lg">Tailwind</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
                 <FaBootstrap className="text-[#563D7C] text-md hover:text-[#4c3575] transition duration-300
 " />
               </p>
-              <p className="text-gray-400">Bootstrap</p>
+              <p className="text-gray-400 text-sm sm:text-lg">Bootstrap</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
                 <SiNextdotjs className="text-white text-md hover:text-gray-400 transition duration-300
 " />
               </p>
-              <p className="text-gray-400">Next Js</p>
+              <p className="text-gray-400 text-sm sm:text-lg">Next Js</p>
             </div>
           </div>
           {/* 1st row 4th line */}
@@ -150,20 +150,20 @@ const Skills = () => {
                 <FaNodeJs className="text-[#83CD29] text-md hover:text-[#6AAE20] transition duration-300
 "/>
               </p>
-              <p className="text-gray-400">Node Js</p>
+              <p className="text-gray-400 text-sm sm:text-lg">Node Js</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p className="bg-white font-bold text-black text-[7px] p-[1px]">
                 Ex
               </p>
-              <p className="text-gray-400">Express Js</p>
+              <p className="text-gray-400 text-sm sm:text-lg">Express Js</p>
             </div>
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
                 <DiMongodb className="text-[#47A248] text-md hover:text-[#3B8739] transition duration-300
 "/>
               </p>
-              <p className="text-gray-400 ">Mongo DB</p> </div>
+              <p className="text-gray-400 text-sm sm:text-lg">Mongo DB</p> </div>
           </div>
           {/* 1st row 2nd line */}
           <div className="flex gap-2 items-center justify-center">

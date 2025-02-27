@@ -39,7 +39,7 @@ const Hero = () => {
         Hi I am <span className="text-orange-400">Easir Arafat,</span>
       </h2>
       {/* animated text */}
-      <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
+      <h1 className="text-5xl w-full sm:w-3/4 font-bold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-[-20px]">
         {text.split("").map((char, index) => (
           <motion.span
             key={index}
@@ -58,10 +58,8 @@ const Hero = () => {
         ))}
       </h1>
       <p className="w-[50%] text-center text-base leading-7 text-gray-400 mt-[-10px]">
-        I am committed to continuous learning and delivering clean, efficient
-        code to create impactful digital experiences. With a keen eye for detail
-        and a collaborative mindset, I am eager to contribute to innovative
-        projects and grow as a developer.
+        I am committed to continuous learning and delivering clean, efficient code to create impactful digital experiences. With a keen eye for detail
+        and a collaborative mindset, I am eager to contribute to innovative projects and grow as a developer.
       </p>
       <div className="flex flex-col md:flex-row items-center gap-5 mb-5">
         <div>
