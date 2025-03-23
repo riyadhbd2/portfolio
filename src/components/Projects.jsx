@@ -190,9 +190,9 @@ export default function Projects() {
             >
               X
             </button>
-            <img className="h-3/4 rounded-lg" src={selectedProject.image} alt="" />
-            <h2 className="text-2xl font-bold mt-5">{selectedProject.title}</h2>
-            <p className="text-gray-400 mb-4">{selectedProject.description}</p>
+            <img className="h-3/4 rounded-lg mt-5" src={selectedProject.image} alt="" />
+            <h2 className="text-2xl font-bold mt-2">{selectedProject.title}</h2>
+            <p className="text-gray-400 mb-4 w-3/4 text-center">{selectedProject.description}</p>
 
             {/* Action Buttons */}
             <div className="flex gap-5">
