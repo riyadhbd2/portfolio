@@ -9,13 +9,15 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      image: "",
-      tech: [],
-      title: "Project One",
-      description: "",
+      image: "food_delivery.jpg",
+      tech: ["React js", "Express Js", "MongoDb", "Tailwind"],
+      title: "Food Pack",
+      description:
+        "A complete full-stack food-delivery application with backend and admin panel.",
       category: "React JS",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one",
+      liveLink:
+        "https://food-kingdom-client-qciw475wf-easir-arafats-projects.vercel.app",
+      githubLink: "https://github.com/riyadhbd2/food-kingdom",
     },
     {
       id: 2,
@@ -149,21 +151,29 @@ export default function Projects() {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto">
         {filteredProjects.map((project) => (
           <motion.div
             onClick={() => setSelectedProject(project)}
             key={project.id}
-            className="p-5 shadow-lg border border-gray-700 rounded-lg h-96 cursor-pointer"
+            className="p-6 shadow-lg border border-gray-700 rounded-lg h-96 cursor-pointer"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
-            <img src="" alt="" />
-            <p></p>
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p className="text-gray-500">{project.category}</p>
+            <img className="rounded-lg" src={project.image} alt="" />
+            <div className="flex gap-4 mt-5">
+              {project.tech.map((item, index) => {
+                return (
+                  <ul className="" key={index}>
+                    <li className="text-violet-500 bg-slate-800 px-2 py-1 text-[13px]">{item}</li>
+                  </ul>
+                );
+              })}
+            </div>
+            <h3 className="text-xl font-bold mt-2">{project.title}</h3>
+            <p className="text-gray-400">{project.description}</p>
           </motion.div>
         ))}
       </div>
@@ -175,8 +185,6 @@ export default function Projects() {
             <img className="h-3/4 w-3/4" src={logo} alt="" />
             <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
             <p className="text-gray-400 mb-4">{selectedProject.description}</p>
-
-            
 
             {/* Action Buttons */}
             <div className="flex justify-between w-full">
