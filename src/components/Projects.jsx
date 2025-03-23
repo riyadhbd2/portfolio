@@ -20,12 +20,12 @@ export default function Projects() {
     },
     {
       id: 2,
-      image: "",
-      tech: [],
-      title: "Project Two",
-      description: "",
-      category: "Next JS",
-      liveLink: "https://example.com/live",
+      image: "mern_authentication.jpg",
+      tech: ["React js", "Express Js", "MongoDb", "Tailwind"],
+      title: "Mern Authentication",
+      description: "MERN authentication system with email verification. OTP is used to verify email and reset password. Nodemailer is used to send email.",
+      category: "React JS",
+      liveLink: "https://mern-authenticatin-frontend.vercel.app",
       githubLink: "https://github.com/example/project-one",
     },
     {
