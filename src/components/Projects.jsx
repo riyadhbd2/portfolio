@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import logo from "../assets/logo.svg";
 
 export default function Projects() {
   const [filter, setFilter] = useState("All");
@@ -167,7 +166,9 @@ export default function Projects() {
               {project.tech.map((item, index) => {
                 return (
                   <ul className="" key={index}>
-                    <li className="text-violet-500 bg-slate-800 px-2 py-1 text-[13px]">{item}</li>
+                    <li className="text-violet-500 bg-slate-800 px-2 py-1 text-[13px]">
+                      {item}
+                    </li>
                   </ul>
                 );
               })}
@@ -181,18 +182,25 @@ export default function Projects() {
       {/* Dark Themed Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black flex items-center justify-center p-4 z-10">
-          <div className="bg-gray-900 p-36 rounded-lg flex flex-col items-center shadow-lg h-3/4 md:w-3/6 w-full text-white border border-gray-500">
-            <img className="h-3/4 w-3/4" src={logo} alt="" />
-            <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
+          <div className="relative bg-gray-900 py-10 rounded-lg flex flex-col items-center shadow-lg h-3/4 md:w-3/6 w-full text-white border border-gray-500">
+            {/* Close Button */}
+            <button
+              className="absolute top-0 right-5 mt-4 py-2 flex justify-center items-center  text-white rounded-md hover:bg-red-700 transition"
+              onClick={() => setSelectedProject(null)}
+            >
+              X
+            </button>
+            <img className="h-3/4 rounded-lg" src={selectedProject.image} alt="" />
+            <h2 className="text-2xl font-bold mt-5">{selectedProject.title}</h2>
             <p className="text-gray-400 mb-4">{selectedProject.description}</p>
 
             {/* Action Buttons */}
-            <div className="flex justify-between w-full">
+            <div className="flex gap-5">
               <a
                 href={selectedProject.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+                className="px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-blue-700 transition"
               >
                 Live App
               </a>
@@ -205,14 +213,6 @@ export default function Projects() {
                 View Code
               </a>
             </div>
-
-            {/* Close Button */}
-            <button
-              className="mt-4 w-full  py-2 flex justify-center items-center  bg-red-600 text-white rounded-md hover:bg-red-700 transition"
-              onClick={() => setSelectedProject(null)}
-            >
-              Close
-            </button>
           </div>
         </div>
       )}
