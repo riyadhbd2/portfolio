@@ -12,7 +12,7 @@ export default function Projects() {
       tech: ["React js", "Express Js", "MongoDb", "Tailwind"],
       title: "Food Pack",
       description:
-        "A complete full-stack food-delivery application with backend and admin panel.",
+        "A complete full-stack food-delivery application with backend and admin panel. In this project I used React js, Express Js, MongoDB for Database and tailwind.",
       category: "React JS",
       liveLink:
         "https://food-kingdom-client-qciw475wf-easir-arafats-projects.vercel.app",
