@@ -26,7 +26,7 @@ export default function Projects() {
       description: "MERN authentication system with email verification. OTP is used to verify email and reset password. Nodemailer is used to send email.",
       category: "React JS",
       liveLink: "https://mern-authenticatin-frontend.vercel.app",
-      githubLink: "https://github.com/example/project-one",
+      githubLink: "https://github.com/riyadhbd2/mern-authenticatin",
     },
     {
       id: 3,
