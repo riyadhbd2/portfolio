@@ -200,7 +200,7 @@ export default function Projects() {
                 href={selectedProject.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-blue-700 transition"
+                className="px-6 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition"
               >
                 Live App
               </a>
@@ -208,7 +208,7 @@ export default function Projects() {
                 href={selectedProject.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition"
+                className="border border-white hover:border-blue-700 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition"
               >
                 View Code
               </a>
