@@ -162,11 +162,11 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
             <img className="rounded-lg" src={project.image} alt="" />
-            <div className="flex w-full items-center justify-between gap-2 mt-5">
+            <div className="flex w-full max-w-xs justify-between mt-5">
               {project.tech.map((item, index) => {
                 return (
                   <ul className="" key={index}>
-                    <li className="text-violet-500 bg-slate-800 px-2 py-1 text-[13px]">
+                    <li className="text-violet-500 bg-gray-700 px-2 rounded-sm text-[13px]">
                       {item}
                     </li>
                   </ul>
