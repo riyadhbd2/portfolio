@@ -23,7 +23,8 @@ export default function Projects() {
       image: "mern_authentication.jpg",
       tech: ["React js", "Express Js", "MongoDb", "Tailwind"],
       title: "Mern Authentication",
-      description: "MERN authentication system with email verification. OTP is used to verify email and reset password. Nodemailer is used to send email.",
+      description:
+        "MERN authentication system with email verification. OTP is used to verify email and reset password. Nodemailer is used to send email.",
       category: "React JS",
       liveLink: "https://mern-authenticatin-frontend.vercel.app",
       githubLink: "https://github.com/riyadhbd2/mern-authenticatin",
@@ -153,26 +154,33 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto">
         {filteredProjects.map((project) => (
           <motion.div
+            layout
             onClick={() => setSelectedProject(project)}
             key={project.id}
-            className="p-6 shadow-lg border border-gray-700 rounded-lg h-96 cursor-pointer"
+            className="p-6 shadow-lg border border-gray-700 rounded-lg min-h-96 cursor-pointer"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
-            <img className="rounded-lg" src={project.image} alt="" />
-            <div className="grid gap-2 grid-cols-3 mt-5">
-              {project.tech.map((item, index) => {
-                return (
-                  <ul className="" key={index}>
-                    <li className="text-violet-500 bg-gray-700 text-center rounded-sm text-[13px]">
-                      {item}
-                    </li>
-                  </ul>
-                );
-              })}
+            <img
+              className="rounded-lg w-full h-40 object-cover"
+              src={project.image}
+              alt=""
+            />
+
+            <div className="grid grid-cols-3 gap-2 mt-5">
+              {" "}
+              {/* Grid with 3 items per row */}
+              {project.tech.map((item, index) => (
+                <ul key={index}>
+                  <li className="text-violet-500 bg-gray-700 text-center rounded-sm text-[13px]">
+                    {item}
+                  </li>
+                </ul>
+              ))}
             </div>
+
             <h3 className="text-xl font-bold mt-2">{project.title}</h3>
             <p className="text-gray-400">{project.description}</p>
           </motion.div>
@@ -190,9 +198,15 @@ export default function Projects() {
             >
               X
             </button>
-            <img className="h-3/4 rounded-lg mt-5" src={selectedProject.image} alt="" />
+            <img
+              className="h-3/4 rounded-lg mt-5"
+              src={selectedProject.image}
+              alt=""
+            />
             <h2 className="text-2xl font-bold mt-2">{selectedProject.title}</h2>
-            <p className="text-gray-400 mb-4 w-3/4 text-center">{selectedProject.description}</p>
+            <p className="text-gray-400 mb-4 w-3/4 text-center">
+              {selectedProject.description}
+            </p>
 
             {/* Action Buttons */}
             <div className="flex gap-5">
