@@ -162,7 +162,7 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
             <img className="rounded-lg" src={project.image} alt="" />
-            <div className="grid gap-2 grid-cols-3 lg:grid-cols-4 mt-5">
+            <div className="grid gap-2 grid-cols-3 mt-5">
               {project.tech.map((item, index) => {
                 return (
                   <ul className="" key={index}>
