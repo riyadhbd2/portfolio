@@ -190,7 +190,7 @@ export default function Projects() {
       {/* Dark Themed Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black flex items-center justify-center p-4 z-10">
-          <div className="relative bg-gray-900 py-10 rounded-lg flex flex-col items-center shadow-lg h-3/4 md:w-3/6 w-full text-white border border-gray-500">
+          <div className="relative bg-gray-900 px-5 py-10 rounded-lg flex flex-col items-center shadow-lg h-3/4 md:w-3/6 w-full text-white border border-gray-500">
             {/* Close Button */}
             <button
               className="absolute top-0 right-5 mt-4 py-2 flex justify-center items-center  text-white rounded-md transition"
