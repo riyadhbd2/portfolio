@@ -6,7 +6,7 @@ import profile from "../assets/profile.png";
 const Hero = () => {
   // CV download function
   const handleDownload = () => {
-    const cvUrl = "/Easir_Arafat_Resume.pdf"; // Ensure your CV is in the 'public' folder
+    const cvUrl = "/cv.pdf"; // Ensure your CV is in the 'public' folder
     const link = document.createElement("a");
     link.href = cvUrl;
     link.download = "Easir_Arafat_Resume.pdf"; // The filename when downloaded
