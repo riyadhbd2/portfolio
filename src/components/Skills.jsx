@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { AiOutlineKubernetes } from "react-icons/ai";
 import { DiMongodb, DiMysql, DiPostgresql } from "react-icons/di";
+import { TbBrandReactNative } from "react-icons/tb";
 import {
   FaAws,
   FaBootstrap,
@@ -127,10 +128,9 @@ const Skills = () => {
 
             <div className="border border-gray-400 flex justify-center items-center gap-1 px-3 py-1 rounded-xl ">
               <p>
-                <FaFlutter className="text-[#02569B] text-md hover:text-[#0177B7] transition duration-300
-"/>
+                <TbBrandReactNative className="text-[#61DAFB] text-lg hover:text-[#21A1F1] transition duration-300" />
               </p>
-              <p className="text-gray-400">Flutter</p>
+              <p className="text-gray-400">React Native</p>
             </div>
           </div>
         </motion.div>
