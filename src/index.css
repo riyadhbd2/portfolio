@@ -1,89 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import 'keep-react/css';
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "keep-react/css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Outfit", serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", serif;
 }
-body{
-    height: 100vh;
-    color: white;
-    font-family: 'outfit';
+body {
+  height: 100vh;
+  color: white;
+  font-family: "outfit";
 }
-
 
 @keyframes orbit-1 {
-    0% { transform: rotate(0deg) translateX(50px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+  0% {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
   }
-  
-  @keyframes orbit-2 {
-    0% { transform: rotate(0deg) translateX(80px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(80px) rotate(-360deg); }
+  100% {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
   }
-  
-  @keyframes orbit-3 {
-    0% { transform: rotate(0deg) translateX(120px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+@keyframes orbit-2 {
+  0% {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
   }
-  
-  @keyframes orbit-4 {
-    0% { transform: rotate(0deg) translateX(160px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(160px) rotate(-360deg); }
+  100% {
+    transform: rotate(360deg) translateX(80px) rotate(-360deg);
   }
-  
-  @keyframes orbit-5 {
-    0% { transform: rotate(0deg) translateX(200px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@keyframes orbit-3 {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
   }
-  
-  @keyframes orbit-6 {
-    0% { transform: rotate(0deg) translateX(240px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(240px) rotate(-360deg); }
+  100% {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
   }
-  
-  @keyframes orbit-7 {
-    0% { transform: rotate(0deg) translateX(280px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(280px) rotate(-360deg); }
+}
+
+@keyframes orbit-4 {
+  0% {
+    transform: rotate(0deg) translateX(160px) rotate(0deg);
   }
-  
-  @keyframes orbit-8 {
-    0% { transform: rotate(0deg) translateX(320px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(320px) rotate(-360deg); }
+  100% {
+    transform: rotate(360deg) translateX(160px) rotate(-360deg);
   }
-  
-  .animate-orbit-1 {
-    animation: orbit-1 10s linear infinite;
+}
+
+@keyframes orbit-5 {
+  0% {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
   }
-  
-  .animate-orbit-2 {
-    animation: orbit-2 15s linear infinite;
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
   }
-  
-  .animate-orbit-3 {
-    animation: orbit-3 20s linear infinite;
+}
+
+@keyframes orbit-6 {
+  0% {
+    transform: rotate(0deg) translateX(240px) rotate(0deg);
   }
-  
-  .animate-orbit-4 {
-    animation: orbit-4 25s linear infinite;
+  100% {
+    transform: rotate(360deg) translateX(240px) rotate(-360deg);
   }
-  
-  .animate-orbit-5 {
-    animation: orbit-5 30s linear infinite;
+}
+
+@keyframes orbit-7 {
+  0% {
+    transform: rotate(0deg) translateX(280px) rotate(0deg);
   }
-  
-  .animate-orbit-6 {
-    animation: orbit-6 35s linear infinite;
+  100% {
+    transform: rotate(360deg) translateX(280px) rotate(-360deg);
   }
-  
-  .animate-orbit-7 {
-    animation: orbit-7 40s linear infinite;
+}
+
+@keyframes orbit-8 {
+  0% {
+    transform: rotate(0deg) translateX(320px) rotate(0deg);
   }
-  
-  .animate-orbit-8 {
-    animation: orbit-8 45s linear infinite;
+  100% {
+    transform: rotate(360deg) translateX(320px) rotate(-360deg);
   }
+}
+
+.animate-orbit-1 {
+  animation: orbit-1 10s linear infinite;
+}
+
+.animate-orbit-2 {
+  animation: orbit-2 15s linear infinite;
+}
+
+.animate-orbit-3 {
+  animation: orbit-3 20s linear infinite;
+}
+
+.animate-orbit-4 {
+  animation: orbit-4 25s linear infinite;
+}
+
+.animate-orbit-5 {
+  animation: orbit-5 30s linear infinite;
+}
+
+.animate-orbit-6 {
+  animation: orbit-6 35s linear infinite;
+}
+
+.animate-orbit-7 {
+  animation: orbit-7 40s linear infinite;
+}
+
+.animate-orbit-8 {
+  animation: orbit-8 45s linear infinite;
+}
+
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
