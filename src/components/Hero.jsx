@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+
 import { Link } from "react-router";
 import profile from "../assets/profile.png";
 
@@ -9,7 +9,7 @@ const Hero = () => {
     const cvUrl = "/Easir_Arafat_Resume.pdf"; // Ensure your CV is in the 'public' folder
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Easir_Arafat_Resume.pdf"; // The filename when downloaded
+    link.download = "Easir_Arafat_Resume_Deutsch.pdf"; // The filename when downloaded
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
