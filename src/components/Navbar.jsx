@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router";
 
 const Navbar = () => {
-
   const [scrolling, setScrolling] = useState(false);
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,32 +39,49 @@ const Navbar = () => {
         >
           {" "}
           <p className="flex items-center justify-center">
-            <FaLessThan />  <span className="text-2xl">Easir Arafat</span> <FaGreaterThan />{" "}
+            <FaLessThan /> <span className="text-2xl">Easir Arafat</span>{" "}
+            <FaGreaterThan />{" "}
           </p>
         </Link>
         {/* Burger Menu Button */}
-        <button className="lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-          <RxHamburgerMenu className="w-6 h-6 text-white" />
-        </button>
+        {menuOpen ? (
+          <button className="lg:hidden" onClick={() => setMenuOpen(false)}>
+            <IoClose className="text-3xl text-white" />
+          </button>
+        ) : (
+          <button className="lg:hidden" onClick={() => setMenuOpen(true)}>
+            <RxHamburgerMenu className="text-3xl text-white" />
+          </button>
+        )}
 
         {/* Small Transparent Dropdown for Mobile Menu */}
         {menuOpen && (
           <div className="absolute top-12 left-0 bg-transparent shadow-lg p-3 rounded-lg">
             <ul className="flex flex-col gap-2 text-white text-xl  bg-opacity-75 p-3 rounded-lg">
               <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#about">About</Link>
+                <Link className="text-sm" to="#about">
+                  About
+                </Link>
               </li>
               <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#skills">Skills</Link>
+                <Link className="text-sm" to="#skills">
+                  Skills
+                </Link>
               </li>
               <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#projects">Projects</Link>
+                <Link className="text-sm" to="#projects">
+                  Projects
+                </Link>
               </li>
               <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#education">Education</Link>
+                <Link className="text-sm" to="#education">
+                  Education
+                </Link>
               </li>
               <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#contact">Contact</Link>
+                <Link className="text-sm" to="#contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,19 +90,29 @@ const Navbar = () => {
       {/* 2nd part */}
       <ul className="hidden lg:flex items-center list-none gap-1 text-base mr-10">
         <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#about" className="text-md">About</Link>
+          <Link to="#about" className="text-md">
+            About
+          </Link>
         </li>
         <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#skills" className="text-md">Skills</Link>
+          <Link to="#skills" className="text-md">
+            Skills
+          </Link>
         </li>
         <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#projects" className="text-md">Projects</Link>
+          <Link to="#projects" className="text-md">
+            Projects
+          </Link>
         </li>
         <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#education" className="text-md">Education</Link>
+          <Link to="#education" className="text-md">
+            Education
+          </Link>
         </li>
         <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#contact" className="text-md">Contact</Link>
+          <Link to="#contact" className="text-md">
+            Contact
+          </Link>
         </li>
       </ul>
       {/* 3rd part */}
