@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   // text
-  const text = ["Full-Stack Web Developer Based in", "Germany"];
+  const text = ["Web Developer and IT Support"];
 
   return (
     <section
@@ -55,20 +55,6 @@ const Hero = () => {
             {char === " " ? "\u00A0" : char}
           </motion.span>
         ))}
-        <br /> {/* Line break before Germany */}
-        <motion.span
-          initial={{ opacity: 0, y: 10 }} // Start lower and invisible
-          animate={{ opacity: 1, y: 0 }} // Move up and become visible
-          transition={{
-            duration: 0.8,
-            delay: text[0].length * 0.1, // Delay to appear after main text
-            repeat: Infinity,
-            repeatDelay: 5,
-          }}
-          className="inline-block text-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
-        >
-          Germany
-        </motion.span>
       </h1>
 
       <p className="w-[50%] text-center text-base leading-7 text-gray-400 mt-[-10px]">
