@@ -1,19 +1,36 @@
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router";
 import profile from "../assets/profile.png";
 
 const Hero = () => {
+  const [showCvOptions, setShowCvOptions] = useState(false);
+  const cvMenuRef = useRef(null);
+
   // CV download function
-  const handleDownload = () => {
-    const cvUrl = "/Easir_Arafat_Resume_Deutsch.pdf"; // Ensure your CV is in the 'public' folder
+  const handleDownload = (cvUrl, filename) => {
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Easir_Arafat_Resume.pdf"; // The filename when downloaded
+    link.download = filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    setShowCvOptions(false);
   };
+
+  useEffect(() => {
+    if (!showCvOptions) return;
+    const handleClickOutside = (event) => {
+      if (cvMenuRef.current && !cvMenuRef.current.contains(event.target)) {
+        setShowCvOptions(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showCvOptions]);
 
   // text
   const text = ["Web Developer and IT Support"];
@@ -64,13 +81,44 @@ const Hero = () => {
         projects and grow as a developer.
       </p>
       <div className="flex flex-col md:flex-row items-center gap-5 mb-5">
-        <div>
+        <div className="relative" ref={cvMenuRef}>
           <button
-            onClick={handleDownload}
+            onClick={() => setShowCvOptions((prev) => !prev)}
             className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300"
+            aria-haspopup="true"
+            aria-expanded={showCvOptions}
+            type="button"
           >
             Check Resume
           </button>
+          {showCvOptions && (
+            <div className="absolute left-1/2 z-10 mt-3 w-44 -translate-x-1/2 rounded-xl border border-white/20 bg-white/10 p-1.5 backdrop-blur-md">
+              <button
+                type="button"
+                onClick={() =>
+                  handleDownload(
+                    "/Easir_Arafat_Resume_Deutsch.pdf",
+                    "Easir_Arafat_Resume_Web.pdf"
+                  )
+                }
+                className="w-full rounded-lg px-2.5 py-1.5 text-left text-xs text-white hover:bg-white/10"
+              >
+                For Web Developer
+              </button>
+              <button
+                type="button"
+                onClick={() =>
+                  handleDownload(
+                    "/Easir_Arafat_Resume_IT_Support.pdf",
+                    "Easir_Arafat_Resume_IT_Support.pdf"
+                  )
+                }
+                className="mt-1 w-full rounded-lg px-2.5 py-1.5 text-left text-xs text-white hover:bg-white/10"
+              >
+                For IT Support
+              </button>
+            </div>
+          )}
         </div>
         <div>
           <Link to="#contact">
