@@ -12,7 +12,14 @@ import {
   FaPython,
   FaReact,
   FaGithub,
-  FaFigma
+  FaFigma,
+  FaCloud,
+  FaLaptop,
+  FaWindows,
+  FaApple,
+  FaServer,
+  FaNetworkWired,
+  FaShieldAlt
 } from "react-icons/fa";
 import { FaFlutter } from "react-icons/fa6";
 import { GrGraphQl } from "react-icons/gr";
@@ -327,8 +334,66 @@ const Skills = () => {
             </div>
           </div>
           {/* 1st row 4th line */}
+          <div className="flex gap-2 items-center justify-center"></div>
+        </motion.div>
+        {/* IT Support */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+        >
+          <h1 className="text-3xl text-gray-400 font-bold mt-3">IT Support</h1>
+          <div className="flex justify-center items-center gap-2">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
+              <p>
+                <FaCloud className="text-[#6BCBFF] text-md hover:text-[#52B2E6] transition duration-300" />
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">M365 / Entra ID</p>
+            </div>
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
+              <p>
+                <FaLaptop className="text-[#FFB347] text-md hover:text-[#E69D36] transition duration-300" />
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">Intune / Autopilot</p>
+            </div>
+          </div>
           <div className="flex gap-2 items-center justify-center">
-             
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
+              <p>
+                <FaWindows className="text-[#00A4EF] text-md hover:text-[#0087C2] transition duration-300" />
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">Windows 10/11</p>
+            </div>
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
+              <p>
+                <FaApple className="text-white text-md hover:text-gray-400 transition duration-300" />
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">macOS</p>
+            </div>
+          </div>
+          <div className="flex gap-2 items-center justify-center">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
+              <p>
+                <FaServer className="text-[#B0BEC5] text-md hover:text-[#90A4AE] transition duration-300" />
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">Server / AD / GPO</p>
+            </div>
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
+              <p>
+                <FaNetworkWired className="text-[#34C759] text-md hover:text-[#2EAC4F] transition duration-300" />
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">TCP/IP, DNS, VPN</p>
+            </div>
+          </div>
+          <div className="flex gap-2 items-center justify-center">
+            <div className="border border-gray-400 flex justify-center items-center gap-1 px-4 py-1 rounded-xl ">
+              <p>
+                <FaShieldAlt className="text-[#FF6B6B] text-md hover:text-[#E65F5F] transition duration-300" />
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">Defender / SIEM</p>
+            </div>
           </div>
         </motion.div>
       </div>
