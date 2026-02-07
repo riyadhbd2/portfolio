@@ -38,38 +38,7 @@ export default function Projects() {
       category: "React Native",
       liveLink: "https://example.com/live",
       githubLink: "https://github.com/example/project-one",
-    },
-    {
-      id: 4,
-      image: "",
-      tech: [],
-      title: "Project Four",
-      description: "",
-      category: "React JS",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one",
-    },
-    {
-      id: 5,
-      image: "",
-      tech: [],
-      title: "Project Five",
-      description: "",
-      category: "Next JS",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one",
-    },
-    {
-      id: 6,
-      image: "",
-      tech: [],
-      title: "Project Six",
-      description: "",
-      category: "React Native",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one",
     }
-   
   ];
 
   const categories = ["All", "React JS", "Next JS", "React Native"];
