@@ -41,7 +41,7 @@ export default function Projects() {
     }
   ];
 
-  const categories = ["All", "React JS", "Next JS", "React Native"];
+  const categories = ["All", "React JS", "Next JS"];
 
   const filteredProjects =
     filter === "All" ? projects : projects.filter((p) => p.category === filter);
