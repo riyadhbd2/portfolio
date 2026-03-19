@@ -21,7 +21,6 @@ import {
   FaNetworkWired,
   FaShieldAlt
 } from "react-icons/fa";
-import { FaFlutter } from "react-icons/fa6";
 import { GrGraphQl } from "react-icons/gr";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -33,10 +32,10 @@ import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
   return (
-    <section id="skills" className="container mx-auto mt-20">
+    <section id="skills" className="container mx-auto mt-20 px-4 sm:px-6">
       <div className="text-center leading-8">
-        <h1 className="text-4xl text-orange-400 font-bold">Skills</h1>
-        <p className="text-gray-400">
+        <h1 className="theme-section-title text-4xl font-bold">Skills</h1>
+        <p className="theme-section-copy">
           Here are some of my skills on which I have been working on for the
           past 5 years
         </p>
@@ -45,7 +44,7 @@ const Skills = () => {
       <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 justify-center gap-5 w-full md:w-3/4 mx-auto text-center m-10">
         {/* Frontend */}
         <motion.div
-          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+          className="theme-card skills-panel m-5 flex h-72 flex-col gap-3 rounded-lg"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.05 }}
@@ -147,7 +146,7 @@ const Skills = () => {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+          className="theme-card skills-panel m-5 flex h-72 flex-col gap-3 rounded-lg"
         >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Backend</h1>
           <div className="flex justify-center items-center gap-2">
@@ -226,7 +225,7 @@ const Skills = () => {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+          className="theme-card skills-panel m-5 flex h-72 flex-col gap-3 rounded-lg"
         >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">DevOps</h1>
           <div className="flex justify-center items-center gap-2">
@@ -274,7 +273,7 @@ const Skills = () => {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+          className="theme-card skills-panel m-5 flex h-72 flex-col gap-3 rounded-lg"
         >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">Others</h1>
           <div className="flex justify-center items-center gap-2">
@@ -342,7 +341,7 @@ const Skills = () => {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-          className="border border-gray-600 m-5 h-72 rounded-lg flex flex-col gap-3"
+          className="theme-card skills-panel m-5 flex h-72 flex-col gap-3 rounded-lg"
         >
           <h1 className="text-3xl text-gray-400 font-bold mt-3">IT Support</h1>
           <div className="flex justify-center items-center gap-2">

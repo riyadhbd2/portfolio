@@ -1,25 +1,23 @@
 import { motion } from "framer-motion";
-import React from "react";
 import daffodil_logo from "../assets/daffodil_logo.png";
 import university_logo from "../assets/university_logo.png";
-
 
 const Education = () => {
   return (
     <section
       id="education"
-      className="container mx-auto flex flex-col items-center justify-center mt-20 px-4 sm:px-6 lg:px-8"
+      className="container mx-auto mt-20 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8"
     >
       <div className="text-center leading-8">
-        <h1 className="text-4xl font-bold text-orange-400">Education</h1>
-        <p className="text-gray-400 max-w-lg mx-auto">
+        <h1 className="theme-section-title text-4xl font-bold">Education</h1>
+        <p className="theme-section-copy mx-auto max-w-lg">
           My education has been a journey of self-discovery and growth. My
           educational details are as follows.
         </p>
       </div>
-      <div className="text-gray-400 w-full lg:w-3/4 mt-10">
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-          {/* Master education */}
+
+      <div className="theme-section-copy mt-10 w-full lg:w-3/4">
+        <ul className="timeline timeline-snap-icon timeline-vertical max-md:timeline-compact">
           <li className="m-5">
             <div className="timeline-middle flex justify-center">
               <img
@@ -31,56 +29,58 @@ const Education = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="timeline-start md:mr-5 mb-8 border border-gray-600 rounded-lg px-4 sm:px-6 py-5 w-full md:w-4/5"
+              className="theme-card timeline-start mb-8 w-full rounded-lg px-4 py-5 text-[var(--text-secondary)] md:mr-5 md:w-4/5 sm:px-6"
             >
-              <time className="font-mono italic text-xs block text-center sm:text-left">
+              <time className="block text-center font-mono text-xs italic sm:text-left">
                 September 2025 - Expected
               </time>
-              <p className="text-lg font-bold text-center sm:text-left">
-                Master's in Automotive Software Engineering
+              <p className="theme-card-heading text-center text-lg font-bold sm:text-left">
+                Master&apos;s in Automotive Software Engineering
               </p>
               <div className="text-md text-center sm:text-left">
                 Chemnitz University of Technology
               </div>
               <p className="mt-5 text-justify text-sm sm:text-base">
-                I am currently pursuing a Master's Degree in Automotive Software
-                Engineering at TU Chemnitz. I have completed an internship on
-                "Synthetic Data Generation" and am currently doing my thesis on
-                "Configurable, Compact, and Static Web Visualization of RDF
-                Graphs".
+                I am currently pursuing a Master&apos;s Degree in Automotive
+                Software Engineering at TU Chemnitz. I have completed an
+                internship on &quot;Synthetic Data Generation&quot; and am currently
+                doing my thesis on &quot;Configurable, Compact, and Static Web
+                Visualization of RDF Graphs&quot;.
               </p>
             </motion.div>
-            <hr className="bg-white" />
+            <hr className="border-[var(--border-color)] bg-[var(--border-color)]" />
           </li>
-          {/* Bachelor education */}
+
           <li className="m-5">
             <div className="timeline-middle flex justify-center">
               <img
                 className="w-16 sm:w-20"
                 src={daffodil_logo}
-                alt="Preview Technologies"
+                alt="Daffodil International University"
               />
             </div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="timeline-end md:ml-5 mb-8 border border-gray-600 rounded-lg px-4 sm:px-6 py-5 w-full md:w-4/5"
+              className="theme-card timeline-end mb-8 w-full rounded-lg px-4 py-5 text-[var(--text-secondary)] md:ml-5 md:w-4/5 sm:px-6"
             >
-              <time className="font-mono italic text-xs block text-center sm:text-left">
+              <time className="block text-center font-mono text-xs italic sm:text-left">
                 June 2014 - Completed
               </time>
-              <div className="text-lg font-black text-center sm:text-left">
-              Bachelor's in Computer Science and Engineering
+              <div className="theme-card-heading text-center text-lg font-black sm:text-left">
+                Bachelor&apos;s in Computer Science and Engineering
               </div>
-              <p className="text-center sm:text-left">Daffodil International University</p>
+              <p className="text-center sm:text-left">
+                Daffodil International University
+              </p>
               <p className="mt-5 text-justify text-sm sm:text-base">
-                I completed my Bachelor's degree in Computer Science and
+                I completed my Bachelor&apos;s degree in Computer Science and
                 Engineering from Daffodil International University. During my
                 studies, I developed a strong foundation in software
                 development, algorithms, and system design.
               </p>
             </motion.div>
-            <hr className="bg-white" />
+            <hr className="border-[var(--border-color)] bg-[var(--border-color)]" />
           </li>
         </ul>
       </div>

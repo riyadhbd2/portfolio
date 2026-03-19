@@ -14,8 +14,7 @@ export default function Projects() {
       description:
         "A complete full-stack food-delivery application with backend and admin panel. In this project I used React js, Express Js, MongoDB for Database and tailwind.",
       category: "React JS",
-      liveLink:
-        "https://food-kingdom-frontend.vercel.app",
+      liveLink: "https://food-kingdom-frontend.vercel.app",
       githubLink: "https://github.com/riyadhbd2/food-kingdom",
     },
     {
@@ -38,15 +37,14 @@ export default function Projects() {
       category: "React Native",
       liveLink: "https://example.com/live",
       githubLink: "https://github.com/example/project-one",
-    }
+    },
   ];
 
-  const categories = ["All", "React JS", "Next JS"];
+  const categories = ["All", ...new Set(projects.map((project) => project.category))];
 
   const filteredProjects =
     filter === "All" ? projects : projects.filter((p) => p.category === filter);
 
-  //  UseEffect to disable scrolling when modal is open
   useEffect(() => {
     if (selectedProject) {
       document.body.classList.add("overflow-hidden");
@@ -59,102 +57,121 @@ export default function Projects() {
     };
   }, [selectedProject]);
 
+  const renderProjectPreview = (project, imageClassName) => {
+    if (!project.image) {
+      return (
+        <div
+          className={`theme-placeholder flex items-center justify-center rounded-lg text-center text-sm font-medium ${imageClassName}`}
+        >
+          Preview coming soon
+        </div>
+      );
+    }
+
+    return (
+      <img
+        className={imageClassName}
+        src={`/${project.image}`}
+        alt={`${project.title} preview`}
+      />
+    );
+  };
+
   return (
     <section
       id="projects"
-      className="container mx-auto mt-20 flex flex-col items-center justify-center"
+      className="container mx-auto mt-20 flex flex-col items-center justify-center px-4 sm:px-6"
     >
       <div className="p-5 text-center leading-8">
-        <h1 className="text-4xl font-bold text-orange-400">Projects</h1>
-        <p className="text-gray-400">
-          {" "}
+        <h1 className="theme-section-title text-4xl font-bold">Projects</h1>
+        <p className="theme-section-copy">
           I have worked on a wide range of full stack projects. Here are some
-          example.{" "}
+          examples.
         </p>
       </div>
 
-      {/* Filter Buttons */}
-      <div className="flex gap-1 lg:gap-2 justify-center mb-6 mt-5">
+      <div className="mb-6 mt-5 flex flex-wrap justify-center gap-2">
         {categories.map((category) => (
           <button
             key={category}
-            className={`px-4 py-2 rounded-md ${
-              filter === category
-                ? "bg-indigo-600 py-2 px-5 rounded-full text-white"
-                : "bg-gray-200 text-gray-700"
+            className={`theme-filter-button ${
+              filter === category ? "theme-filter-button-active" : ""
             }`}
             onClick={() => setFilter(category)}
+            type="button"
           >
             {category}
           </button>
         ))}
       </div>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-5 w-full md:w-3/4 mx-auto">
+      <div className="grid w-full grid-cols-1 justify-center gap-5 md:w-3/4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {filteredProjects.map((project) => (
           <motion.div
             layout
             onClick={() => setSelectedProject(project)}
             key={project.id}
-            className="p-6 shadow-lg border border-gray-700 rounded-lg min-h-96 cursor-pointer"
+            className="theme-card min-h-96 cursor-pointer rounded-lg p-6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
-            <img
-              className="rounded-lg w-full h-40 object-cover"
-              src={project.image}
-              alt=""
-            />
+            {renderProjectPreview(project, "h-40 w-full rounded-lg object-cover")}
 
-            <div className="grid grid-cols-3 gap-2 mt-5">
-              {" "}
-              {/* Grid with 3 items per row */}
+            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-3">
               {project.tech.map((item, index) => (
                 <ul key={index}>
-                  <li className="text-violet-500 bg-gray-700 text-center rounded-sm text-[13px]">
+                  <li className="theme-tag rounded-sm px-2 py-1 text-center text-[13px]">
                     {item}
                   </li>
                 </ul>
               ))}
             </div>
 
-            <h3 className="text-xl font-bold mt-2">{project.title}</h3>
-            <p className="text-gray-400">{project.description}</p>
+            <h3 className="theme-card-heading mt-2 text-xl font-bold">
+              {project.title}
+            </h3>
+            <p className="theme-section-copy">{project.description}</p>
           </motion.div>
         ))}
       </div>
 
-      {/* Dark Themed Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black flex items-center justify-center p-4 z-10">
-          <div className="relative bg-gray-900 px-5 py-10 rounded-lg flex flex-col items-center shadow-lg h-3/4 md:w-3/6 w-full text-white border border-gray-500">
-            {/* Close Button */}
+        <div
+          className="theme-modal-backdrop fixed inset-0 z-30 flex items-center justify-center p-4"
+          onClick={() => setSelectedProject(null)}
+        >
+          <div
+            className="theme-modal relative flex max-h-[90vh] w-full flex-col items-center overflow-y-auto rounded-lg px-5 py-10 md:w-3/5"
+            onClick={(event) => event.stopPropagation()}
+          >
             <button
-              className="absolute top-0 right-5 mt-4 py-2 flex justify-center items-center  text-white rounded-md transition"
+              className="theme-button-secondary absolute right-4 top-4 px-3 py-1.5 text-sm font-semibold"
               onClick={() => setSelectedProject(null)}
+              type="button"
             >
-              X
+              Close
             </button>
-            <img
-              className="h-3/4 rounded-lg mt-5"
-              src={selectedProject.image}
-              alt=""
-            />
-            <h2 className="text-2xl font-bold mt-2">{selectedProject.title}</h2>
-            <p className="text-gray-400 mb-4 w-3/4 text-center">
+
+            {renderProjectPreview(
+              selectedProject,
+              "mt-5 max-h-[360px] w-full rounded-lg object-cover"
+            )}
+
+            <h2 className="theme-card-heading mt-5 text-center text-2xl font-bold">
+              {selectedProject.title}
+            </h2>
+            <p className="theme-section-copy mb-4 w-full max-w-2xl text-center">
               {selectedProject.description}
             </p>
 
-            {/* Action Buttons */}
-            <div className="flex gap-5">
+            <div className="flex flex-wrap justify-center gap-4">
               <a
                 href={selectedProject.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition"
+                className="theme-button-primary px-6 py-2"
               >
                 Live App
               </a>
@@ -162,7 +179,7 @@ export default function Projects() {
                 href={selectedProject.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-white hover:border-blue-700 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition"
+                className="theme-button-secondary px-4 py-2"
               >
                 View Code
               </a>

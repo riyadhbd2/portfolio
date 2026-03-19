@@ -1,12 +1,10 @@
-import { keepTheme } from 'keep-react/keepTheme'
+import { keepTheme } from "keep-react/keepTheme";
+import daisyui from "daisyui";
 
 const config = {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {},
-  plugins: [
-    require('daisyui'),
-  ],
-  
-}
+  plugins: [daisyui],
+};
 
-export default keepTheme(config)
+export default keepTheme(config);

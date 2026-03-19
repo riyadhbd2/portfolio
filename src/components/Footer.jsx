@@ -1,56 +1,50 @@
-import React from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <div className="text-center mt-36">
-      <h1 className="text-orange-400 text-lg font-bold">Easir Arafat</h1>
-      <div className="flex gap-5 justify-center mt-3">
-        <Link
-          className="text-white hover:bg-clip-text hover:text-indigo-600"
-          to="#about"
-        >
+    <div className="mt-36 px-4 pb-8 text-center text-[var(--text-secondary)]">
+      <h1 className="theme-section-title text-lg font-bold">Easir Arafat</h1>
+
+      <div className="mt-3 flex flex-wrap justify-center gap-2">
+        <Link className="theme-nav-link rounded-full px-3 py-2" to="#about">
           About
         </Link>
-        <Link
-          className="text-white hover:bg-clip-text hover:text-indigo-600"
-          to="#skills"
-        >
+        <Link className="theme-nav-link rounded-full px-3 py-2" to="#skills">
           Skills
         </Link>
         <Link
-          className="text-white hover:bg-clip-text hover:text-indigo-600"
+          className="theme-nav-link rounded-full px-3 py-2"
           to="#experience"
         >
           Experience
         </Link>
-        <Link
-          className="text-white hover:bg-clip-text hover:text-indigo-600"
-          to="#projects"
-        >
+        <Link className="theme-nav-link rounded-full px-3 py-2" to="#projects">
           Projects
         </Link>
         <Link
-          className="text-white hover:bg-clip-text hover:text-indigo-600"
+          className="theme-nav-link rounded-full px-3 py-2"
           to="#education"
         >
           Education
         </Link>
       </div>
+
       <div className="flex justify-center gap-4">
         <button
-          onClick={() =>
-            window.open("https://www.facebook.com/riyadhbd2", "_blank")
-          }
-          className="mt-5 text-[#1877F2] text-xl hover:text-[#0F5AB6] transition duration-300"
+          onClick={() => window.open("https://www.facebook.com/riyadhbd2", "_blank")}
+          className="theme-social-button mt-5 text-xl"
+          type="button"
+          aria-label="Open Facebook profile"
         >
           <FaFacebookF />
         </button>
         <button
           onClick={() => window.open("https://x.com/riyadhbdt2", "_blank")}
-          className="mt-5 text-white text-md hover:text-gray-400 transition duration-300"
+          className="theme-social-button mt-5 text-md"
+          type="button"
+          aria-label="Open X profile"
         >
           <BsTwitterX />
         </button>
@@ -58,20 +52,25 @@ const Footer = () => {
           onClick={() =>
             window.open("https://www.instagram.com/riyadh_bd2/", "_blank")
           }
-          className="mt-5"
+          className="theme-social-button mt-5"
+          type="button"
+          aria-label="Open Instagram profile"
         >
-          <FaInstagram className="text-[#E4405F] text-xl hover:text-[#833AB4] transition duration-300" />
+          <FaInstagram className="text-xl" />
         </button>
         <button
           onClick={() =>
             window.open("https://www.linkedin.com/in/earafat/", "_blank")
           }
-          className="mt-5"
+          className="theme-social-button mt-5"
+          type="button"
+          aria-label="Open LinkedIn profile"
         >
-          <FaLinkedin className="text-[#0A66C2] text-xl hover:text-[#004182] transition duration-300" />
+          <FaLinkedin className="text-xl" />
         </button>
       </div>
-      <p className="mt-3 pb-8 text-xs">© 2025 Easir Arafat. All rights reserved.</p>
+
+      <p className="mt-3 text-xs">© 2025 Easir Arafat. All rights reserved.</p>
     </div>
   );
 };

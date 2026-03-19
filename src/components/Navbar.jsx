@@ -1,127 +1,130 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
+import { FaGreaterThan, FaLessThan, FaMoon, FaSun } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
-
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router";
 
-const Navbar = () => {
-  const [scrolling, setScrolling] = useState(false);
+const navLinks = [
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  { href: "#contact", label: "Contact" },
+];
 
+const Navbar = ({ theme, onThemeToggle }) => {
+  const [scrolling, setScrolling] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // scrolling bg useffect
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div
-      className={`flex items-center justify-around py-2 fixed top-0 z-10 transition-all duration-300 w-full ${
-        scrolling ? "bg-gray-900 text-white shadow-lg" : "bg-transparent"
-      } `}
+      className={`fixed top-0 z-20 flex w-full items-center justify-between px-4 text-[var(--text-primary)] transition-all duration-300 sm:px-6 lg:px-12 ${
+        scrolling ? "theme-navbar py-3" : "bg-transparent py-2"
+      }`}
     >
-      {/* 1st part */}
       <div>
-        {/* Logo or Navbar Title */}
         <Link
           to="/"
-          className="hidden lg:block text-2xl font-bold text-orange-400"
+          className="theme-section-title hidden text-2xl font-bold lg:block"
         >
-          {" "}
           <p className="flex items-center justify-center">
             <FaLessThan /> <span className="text-2xl">Easir Arafat</span>{" "}
-            <FaGreaterThan />{" "}
+            <FaGreaterThan />
           </p>
         </Link>
-        {/* Burger Menu Button */}
+
         {menuOpen ? (
-          <button className="lg:hidden" onClick={() => setMenuOpen(false)}>
-            <IoClose className="text-3xl text-white" />
+          <button
+            className="lg:hidden"
+            onClick={() => setMenuOpen(false)}
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            <IoClose className="text-3xl text-[var(--text-primary)]" />
           </button>
         ) : (
-          <button className="lg:hidden" onClick={() => setMenuOpen(true)}>
-            <RxHamburgerMenu className="text-3xl text-white" />
+          <button
+            className="lg:hidden"
+            onClick={() => setMenuOpen(true)}
+            type="button"
+            aria-label="Open navigation menu"
+          >
+            <RxHamburgerMenu className="text-3xl text-[var(--text-primary)]" />
           </button>
         )}
 
-        {/* Small Transparent Dropdown for Mobile Menu */}
         {menuOpen && (
-          <div className="absolute top-12 left-0 bg-transparent shadow-lg p-3 rounded-lg">
-            <ul className="flex flex-col gap-2 text-white text-xl  bg-opacity-75 p-3 rounded-lg">
-              <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#about">
-                  About
-                </Link>
-              </li>
-              <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#skills">
-                  Skills
-                </Link>
-              </li>
-              <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#projects">
-                  Projects
-                </Link>
-              </li>
-              <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#education">
-                  Education
-                </Link>
-              </li>
-              <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:text-indigo-600">
-                <Link className="text-sm" to="#contact">
-                  Contact
-                </Link>
-              </li>
+          <div className="theme-mobile-menu absolute left-0 top-14 rounded-2xl p-2">
+            <ul className="flex flex-col gap-1">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    className="theme-nav-link block rounded-full px-4 py-2 text-sm font-medium"
+                    to={link.href}
+                    onClick={handleNavClick}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         )}
       </div>
-      {/* 2nd part */}
-      <ul className="hidden lg:flex items-center list-none gap-1 text-base mr-10">
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#about" className="text-md">
-            About
-          </Link>
-        </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#skills" className="text-md">
-            Skills
-          </Link>
-        </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#projects" className="text-md">
-            Projects
-          </Link>
-        </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#education" className="text-md">
-            Education
-          </Link>
-        </li>
-        <li className="text-white py-2 px-5 rounded-full hover:bg-clip-text hover:text-transparent hover:bg-indigo-600">
-          <Link to="#contact" className="text-md">
-            Contact
-          </Link>
-        </li>
+
+      <ul className="mr-10 hidden list-none items-center gap-1 text-base lg:flex">
+        {navLinks.map((link) => (
+          <li key={link.href}>
+            <Link
+              to={link.href}
+              className="theme-nav-link rounded-full px-5 py-2 text-sm font-medium"
+              onClick={handleNavClick}
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
       </ul>
-      {/* 3rd part */}
-      <div>
+
+      <div className="flex items-center gap-2 sm:gap-3">
+        <button
+          onClick={onThemeToggle}
+          className="theme-button-secondary gap-2 px-3 py-2 text-sm font-semibold"
+          type="button"
+          aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+        >
+          {theme === "dark" ? (
+            <FaSun className="text-sm text-[var(--accent)]" />
+          ) : (
+            <FaMoon className="text-sm text-[var(--accent)]" />
+          )}
+          <span className="hidden sm:inline">
+            {theme === "dark" ? "Light Mode" : "Dark Mode"}
+          </span>
+        </button>
+
         <button
           onClick={() => window.open("https://github.com/riyadhbd2", "_blank")}
-          className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300"
+          className="theme-button-primary px-5 py-2"
+          type="button"
         >
-          Github Profile
+          <span className="hidden sm:inline">Github Profile</span>
+          <span className="sm:hidden">GitHub</span>
         </button>
       </div>
     </div>

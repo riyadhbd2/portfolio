@@ -35,56 +35,52 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="mt-20">
+    <section id="contact" className="mt-20 px-4 sm:px-6">
       <div className="text-center leading-10">
-        <h1 className="text-4xl font-bold text-orange-400">Contact</h1>
-        <p className="text-gray-400">
+        <h1 className="theme-section-title text-4xl font-bold">Contact</h1>
+        <p className="theme-section-copy">
           Feel free to reach out to me for any questions or opportunities!
         </p>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col gap-3 border border-gray-600 rounded-lg p-7 mt-10 w-full md:w-2/4 lg:w-2/4 xl:w-1/4"
+          className="theme-card mt-10 flex w-full flex-col gap-3 rounded-lg p-7 md:w-2/4 lg:w-2/4 xl:w-1/4"
         >
-          <p className="text-xl font-bold">Email Me</p>
+          <p className="theme-card-heading text-xl font-bold">Email Me</p>
 
-          {/* IMPORTANT: names must match template variables */}
           <input
-            className="border p-2 border-gray-600 rounded-xl h-12 placeholder:p-3"
+            className="theme-input h-12 rounded-xl p-2 placeholder:p-3"
             type="email"
             name="from_email"
             placeholder="Your Email"
             required
           />
           <input
-            className="border p-2 border-gray-600 rounded-xl h-12 placeholder:px-3"
+            className="theme-input h-12 rounded-xl p-2 placeholder:px-3"
             type="text"
             name="from_name"
             placeholder="Your Name"
             required
           />
           <input
-            className="border p-2 border-gray-600 rounded-xl h-12 placeholder:p-3"
+            className="theme-input h-12 rounded-xl p-2 placeholder:p-3"
             type="text"
             name="subject"
             placeholder="Subject"
             required
           />
           <textarea
-            className="border p-2 border-gray-600 rounded-xl h-36 placeholder:p-3"
+            className="theme-input h-36 rounded-xl p-2 placeholder:p-3"
             name="message"
             rows="6"
             placeholder="Message"
             required
           ></textarea>
 
-          <button
-            type="submit"
-            className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold py-2 px-5 rounded-full hover:from-blue-700 hover:via-purple-700 hover:to-pink-600 transform hover:scale-105 transition duration-300"
-          >
+          <button type="submit" className="theme-button-primary px-5 py-2">
             Send
           </button>
         </form>
