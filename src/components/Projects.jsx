@@ -9,10 +9,10 @@ export default function Projects() {
     {
       id: 1,
       image: "food_delivery.jpg",
-      tech: ["React js", "Express Js", "MongoDb", "Tailwind"],
+      tech: ["React.js", "Express.js", "MongoDB", "Tailwind CSS"],
       title: "Food Pack",
       description:
-        "A complete full-stack food-delivery application with backend and admin panel. In this project I used React js, Express Js, MongoDB for Database and tailwind.",
+        "A complete full-stack food-delivery application with backend and admin panel. In this project I used React.js, Express.js, MongoDB for database, and Tailwind CSS.",
       category: "React JS",
       liveLink: "https://food-kingdom-frontend.vercel.app",
       githubLink: "https://github.com/riyadhbd2/food-kingdom",
@@ -20,7 +20,7 @@ export default function Projects() {
     {
       id: 2,
       image: "mern_authentication.jpg",
-      tech: ["React js", "Express Js", "MongoDb", "Tailwind"],
+      tech: ["React.js", "Express.js", "MongoDB", "Tailwind CSS"],
       title: "Mern Authentication",
       description:
         "MERN authentication system with email verification. OTP is used to verify email and reset password. Nodemailer is used to send email.",
@@ -105,13 +105,13 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="grid w-full grid-cols-1 justify-center gap-5 md:w-3/4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid w-full max-w-[1120px] grid-cols-1 justify-center gap-5 md:grid-cols-2 xl:grid-cols-3">
         {filteredProjects.map((project) => (
           <motion.div
             layout
             onClick={() => setSelectedProject(project)}
             key={project.id}
-            className="theme-card min-h-96 cursor-pointer rounded-lg p-6"
+            className="theme-card min-h-96 w-full cursor-pointer rounded-lg p-6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
@@ -119,13 +119,13 @@ export default function Projects() {
           >
             {renderProjectPreview(project, "h-40 w-full rounded-lg object-cover")}
 
-            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-3">
+            <div className="mt-5 flex flex-wrap gap-2">
               {project.tech.map((item, index) => (
-                <ul key={index}>
-                  <li className="theme-tag rounded-sm px-2 py-1 text-center text-[13px]">
+                <div key={index}>
+                  <span className="theme-tag inline-flex min-h-8 items-center justify-center whitespace-nowrap rounded-full px-3 py-1 text-center text-[13px] font-medium">
                     {item}
-                  </li>
-                </ul>
+                  </span>
+                </div>
               ))}
             </div>
 

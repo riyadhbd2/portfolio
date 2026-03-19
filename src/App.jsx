@@ -100,8 +100,8 @@ const App = () => {
 
   const particleColors =
     activeTheme === "dark"
-      ? ["#ffffff", "#c4b5fd", "#38bdf8"]
-      : ["#0f172a", "#2563eb", "#fb923c"];
+      ? ["#34d399", "#2dd4bf", "#a7f3d0"]
+      : ["#111827", "#1f2937", "#0f766e"];
 
   return (
     <div className="min-h-screen">

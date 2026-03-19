@@ -53,7 +53,7 @@ const Hero = () => {
         Hi I am <span className="theme-section-title">Easir Arafat,</span>
       </h2>
 
-      <h1 className="mt-[-20px] w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-center text-3xl font-bold text-transparent md:text-5xl sm:w-3/4">
+      <h1 className="theme-hero-gradient mt-[-20px] w-full bg-clip-text text-center text-3xl font-bold text-transparent md:text-5xl sm:w-3/4">
         {text[0].split("").map((char, index) => (
           <motion.span
             key={index}
