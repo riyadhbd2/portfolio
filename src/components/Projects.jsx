@@ -30,13 +30,13 @@ export default function Projects() {
     },
     {
       id: 3,
-      image: "",
-      tech: [],
-      title: "Project Three",
-      description: "",
-      category: "React Native",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/example/project-one",
+      image: "rdf_graph.png",
+      tech: ["React.js", "D3.js", "RDF", "SPARQL"],
+      title: "Configurable, Compact, and Static Web Visualization of RDF Graphs",
+      description: "My Master's thesis project on visualizing RDF graphs in a configurable, compact, and static way for web applications.",
+      category: "React JS",
+      liveLink: "https://rdf-graph-visualizer-blx1.vercel.app/",
+      githubLink: "https://github.com/riyadhbd2/rdf-graph-visualizer",
     },
   ];
 

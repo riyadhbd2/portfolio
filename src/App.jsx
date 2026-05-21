@@ -8,7 +8,6 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Particles from "./components/Particles";
 
 const THEME_STORAGE_KEY = "portfolio-theme";
 
@@ -98,25 +97,8 @@ const App = () => {
     setThemePreference(activeTheme === "dark" ? "light" : "dark");
   };
 
-  const particleColors =
-    activeTheme === "dark"
-      ? ["#34d399", "#2dd4bf", "#a7f3d0"]
-      : ["#111827", "#1f2937", "#0f766e"];
-
   return (
     <div className="min-h-screen">
-        <div className="particles-container">
-          <Particles
-            particleColors={particleColors}
-            particleCount={activeTheme === "dark" ? 200 : 160}
-            particleSpread={10}
-            speed={0.08}
-            particleBaseSize={activeTheme === "dark" ? 100 : 76}
-            moveParticlesOnHover={true}
-            alphaParticles={activeTheme === "light"}
-            disableRotation={false}
-          />
-        </div>
         <BrowserRouter>
           <ScrollToSection />
           <Navbar theme={activeTheme} onThemeToggle={handleThemeToggle} />

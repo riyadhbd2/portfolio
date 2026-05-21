@@ -32,7 +32,7 @@ const Education = () => {
               className="theme-card timeline-start mb-8 w-full rounded-lg px-4 py-5 text-[var(--text-secondary)] md:mr-5 md:w-4/5 sm:px-6"
             >
               <time className="block text-center font-mono text-xs italic sm:text-left">
-                September 2025 - Expected
+                April 2026 - Completed
               </time>
               <p className="theme-card-heading text-center text-lg font-bold sm:text-left">
                 Master&apos;s in Automotive Software Engineering
@@ -41,10 +41,9 @@ const Education = () => {
                 Chemnitz University of Technology
               </div>
               <p className="mt-5 text-justify text-sm sm:text-base">
-                I am currently pursuing a Master&apos;s Degree in Automotive
-                Software Engineering at TU Chemnitz. I have completed an
-                internship on &quot;Synthetic Data Generation&quot; and am currently
-                doing my thesis on &quot;Configurable, Compact, and Static Web
+                I have just completed my Master&apos;s Degree in Automotive
+                Software Engineering at TU Chemnitz. I  completed an
+                internship on &quot;Synthetic Data Generation&quot; and finished my thesis on &quot;Configurable, Compact, and Static Web
                 Visualization of RDF Graphs&quot;.
               </p>
             </motion.div>

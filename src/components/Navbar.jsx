@@ -32,8 +32,8 @@ const Navbar = ({ theme, onThemeToggle }) => {
 
   return (
     <div
-      className={`fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-4 py-3 text-[var(--text-primary)] transition-[background-color,border-color,box-shadow] duration-300 sm:px-6 lg:px-12 ${
-        scrolling ? "theme-navbar" : "bg-transparent"
+      className={`fixed top-0 z-20 flex w-full items-center justify-between border-b px-4 py-3 text-[var(--text-primary)] transition-[background-color,border-color,box-shadow] duration-300 sm:px-6 lg:px-12 theme-navbar ${
+        scrolling ? "theme-navbar-scrolled" : "theme-navbar-resting"
       }`}
     >
       <div>
